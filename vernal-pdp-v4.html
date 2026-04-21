@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vernal Standing Desk — Built to Stay Still</title>
+<meta name="description" content="Three-stage dual-motor standing desk. &lt;0.001″ column tolerance, 30,000+ lift cycles tested, 15-year frame warranty. Free shipping & 30-day returns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ─── RESET ─── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',system-ui,sans-serif;font-weight:400;background:#f8f5f0;color:#1c1a17;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-size:16px;line-height:1.6}
+img,svg{max-width:100%;display:block}
+button{cursor:pointer;font-family:inherit}
+a{color:inherit}
+
+/* ─── TOKENS ─── */
+:root{
+  --ink:#1c1a17;
+  --ink2:#4a4640;
+  --ink3:#7a7670;
+  --cream:#f8f5f0;
+  --cream2:#ede9e2;
+  --cream3:#ddd8ce;
+  --forest:#2a5438;
+  --forest2:#1c3a27;
+  --forest3:#3a7050;
+  --forestl:#e6f0ea;
+  --gold:#a07828;
+  --goldl:#fdf4e4;
+  --charcoal:#1c1a17;
+  --white:#ffffff;
+  --serif:'Lora',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --r:8px;
+  --rlg:14px;
+  --shadow:0 2px 12px rgba(0,0,0,0.08);
+  --shadow-lg:0 8px 32px rgba(0,0,0,0.12);
+}
+
+/* ─── LAYOUT ─── */
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 1.25rem}
+section{position:relative}
+
+/* ─── TOPBAR ─── */
+.topbar{background:var(--charcoal);padding:.6rem 1.25rem;text-align:center}
+.topbar p{color:rgba(255,255,255,.65);font-size:13px;line-height:1.4}
+.topbar strong{color:#d4b870;font-weight:600}
+
+/* ─── NAV ─── */
+nav{background:var(--cream);border-bottom:1px solid var(--cream3);padding:.875rem 0;position:sticky;top:0;z-index:200}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-family:var(--serif);font-size:1.4rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;text-decoration:none;flex-shrink:0}
+.logo-dot{color:var(--forest)}
+.nav-right{display:flex;align-items:center;gap:.625rem}
+.nav-pill{font-size:12px;color:var(--ink2);padding:5px 10px;border:1px solid var(--cream3);border-radius:20px;white-space:nowrap;display:none}
+@media(min-width:640px){.nav-pill{display:inline-block}}
+
+/* ─── STICKY BAR ─── */
+.sticky-bar{
+  position:fixed;bottom:0;left:0;right:0;z-index:300;
+  background:var(--charcoal);
+  border-top:1px solid rgba(255,255,255,.1);
+  padding:.875rem 1.25rem;
+  transform:translateY(100%);
+  transition:transform .3s cubic-bezier(.4,0,.2,1);
+  box-shadow:0 -4px 24px rgba(0,0,0,.2);
+}
+.sticky-bar.show{transform:translateY(0)}
+.sticky-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:1200px;margin:0 auto}
+.sticky-left{display:flex;align-items:center;gap:.75rem;min-width:0}
+.sticky-icon{width:36px;height:36px;background:rgba(255,255,255,.08);border-radius:var(--r);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sticky-info{min-width:0}
+.sticky-name{font-size:13px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky-meta{font-size:12px;color:rgba(255,255,255,.45);white-space:nowrap}
+.sticky-right{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+.sticky-price-wrap{text-align:right}
+.sticky-was{font-size:11px;color:rgba(255,255,255,.35);text-decoration:line-through;line-height:1}
+.sticky-now{font-family:var(--serif);font-size:1.2rem;font-weight:600;color:#fff;letter-spacing:-.02em;line-height:1.1}
+.btn-sticky{padding:.65rem 1.25rem;background:var(--forest3);color:#fff;border:none;border-radius:var(--r);font-size:.875rem;font-weight:600;white-space:nowrap;transition:background .15s}
+.btn-sticky:hover{background:var(--forest)}
+@media(min-width:480px){.sticky-left{display:flex}}
+
+/* ─── HERO ─── */
+.hero{background:var(--cream);display:flex;flex-direction:column}
+@media(min-width:768px){.hero{flex-direction:row;min-height:88vh;align-items:stretch}}
+.hero-visual{background:var(--cream2);position:relative;overflow:hidden;min-height:300px;display:flex;align-items:center;justify-content:center;padding:2rem 1.25rem}
+@media(min-width:768px){.hero-visual{flex:0 0 50%;min-height:auto}}
+.hero-svg-wrap{position:relative;width:100%;max-width:340px;margin:0 auto}
+@media(min-width:768px){.hero-svg-wrap{max-width:420px}}
+.desk-scene{width:100%;height:auto}
+.hero-badge{position:absolute;top:1rem;right:1rem;background:var(--charcoal);border-radius:50%;width:68px;height:68px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.hero-badge-num{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:#d4b870;line-height:1}
+.hero-badge-lbl{font-size:8px;color:rgba(255,255,255,.5);letter-spacing:.04em;margin-top:2px}
+.ftag{position:absolute;background:var(--white);border-radius:var(--rlg);padding:.5rem .875rem;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:.4rem;font-size:11.5px;font-weight:500;color:var(--ink2);white-space:nowrap;line-height:1}
+.ftag .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.ftag1{bottom:2rem;left:.5rem;animation:floatA 4s ease-in-out infinite}
+.ftag2{top:1.5rem;left:.5rem;animation:floatB 4s ease-in-out 1.4s infinite}
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+
+.hero-copy{padding:1.75rem 1.25rem 2.5rem}
+@media(min-width:768px){.hero-copy{flex:1;padding:3.5rem 3.5rem 3.5rem 4rem;display:flex;flex-direction:column;justify-content:center}}
+.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);font-weight:600;margin-bottom:.75rem;display:block}
+h1{font-family:var(--serif);font-size:2rem;font-weight:600;line-height:1.18;letter-spacing:-.01em;color:var(--ink);margin-bottom:1rem}
+h1 em{font-style:italic;color:var(--forest);font-weight:400}
+.hero-desc{font-size:1rem;color:var(--ink2);line-height:1.7;margin-bottom:1.25rem}
+
+.stars-row{display:flex;align-items:center;gap:.625rem;margin-bottom:1.25rem;flex-wrap:wrap}
+.stars{display:flex;gap:2px}
+.star{width:14px;height:14px;background:#c9963a;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.rcount{font-size:14px;color:var(--ink2);font-weight:500}
+.verified-badge{font-size:12px;color:var(--forest);font-weight:600;background:var(--forestl);padding:2px 8px;border-radius:20px}
+
+.price-block{margin-bottom:1.375rem}
+.price-was{font-size:14px;color:var(--ink3);text-decoration:line-through;margin-bottom:4px}
+.price-row{display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap}
+.price-now{font-family:var(--serif);font-size:2.2rem;font-weight:700;letter-spacing:-.03em;color:var(--ink);line-height:1}
+.price-save{background:var(--goldl);color:var(--gold);font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px}
+.price-note{font-size:13px;color:var(--ink3);margin-top:.375rem}
+
+/* ─── URGENCY STRIP ─── */
+.urgency-strip{background:var(--goldl);border:1px solid #e8d090;border-radius:var(--r);padding:.75rem 1rem;margin-bottom:1.375rem;display:flex;align-items:center;gap:.625rem}
+.urgency-strip p{font-size:13px;color:var(--gold);font-weight:500;line-height:1.4}
+.urgency-strip strong{font-weight:700}
+
+/* ─── VARIANTS ─── */
+.variants{margin-bottom:1.375rem;display:flex;flex-direction:column;gap:.875rem}
+.vlabel{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);font-weight:600;margin-bottom:.5rem}
+.vgrid{display:flex;gap:.5rem;flex-wrap:wrap}
+.vbtn{min-height:44px;padding:.5rem .875rem;border:1.5px solid var(--cream3);border-radius:var(--r);background:var(--cream);font-size:14px;color:var(--ink2);transition:all .15s;line-height:1}
+.vbtn:hover,.vbtn.on{border-color:var(--forest);background:var(--forestl);color:var(--forest2);font-weight:600}
+.cbtn{min-height:44px;display:flex;align-items:center;gap:7px;padding:.5rem .875rem;border:1.5px solid var(--cream3);border-radius:var(--r);background:var(--cream);font-size:14px;color:var(--ink2);transition:all .15s}
+.cbtn:hover,.cbtn.on{border-color:var(--forest);background:var(--forestl);color:var(--forest2)}
+.cdot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+
+/* ─── CTA BLOCK ─── */
+.cta-block{margin-bottom:1.125rem}
+.btn-add{width:100%;min-height:52px;padding:1rem 1.5rem;background:var(--forest);color:#fff;border:none;border-radius:var(--r);font-size:1rem;font-weight:600;letter-spacing:.01em;transition:background .15s;margin-bottom:.625rem}
+.btn-add:hover{background:var(--forest2)}
+.btn-wl{width:100%;min-height:48px;padding:.875rem 1.5rem;background:transparent;color:var(--ink);border:1.5px solid var(--cream3);border-radius:var(--r);font-size:1rem;transition:all .15s}
+.btn-wl:hover{border-color:var(--ink)}
+.trust-row{display:flex;flex-wrap:wrap;gap:.625rem 1.125rem;font-size:13px;color:var(--ink3)}
+.tr-item{display:flex;align-items:center;gap:5px}
+
+/* ─── MARQUEE ─── */
+.marquee-bar{background:var(--forest);padding:.75rem 0;overflow:hidden}
+.mtrack{display:flex;gap:2.5rem;animation:mscroll 28s linear infinite;white-space:nowrap}
+@keyframes mscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mitem{font-size:12px;color:rgba(255,255,255,.6);letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:.625rem;flex-shrink:0}
+.mitem::before{content:'';width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,.3)}
+
+/* ─── SOCIAL PROOF STRIP (mobile-first) ─── */
+.proof-strip{background:var(--white);border-bottom:1px solid var(--cream3);padding:1.25rem 0}
+.proof-strip-inner{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--cream3)}
+.ps-cell{background:var(--white);padding:1.125rem 1.25rem;text-align:center}
+.ps-num{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--forest);letter-spacing:-.02em;line-height:1;margin-bottom:.25rem}
+.ps-label{font-size:12px;color:var(--ink3);font-weight:500}
+@media(min-width:640px){.proof-strip-inner{grid-template-columns:repeat(4,1fr)}}
+
+/* ─── SECTIONS ─── */
+.sec{padding:3.5rem 0}
+.sec-alt{background:var(--cream2);padding:3.5rem 0}
+.sec-dark{background:var(--charcoal);padding:3.5rem 0}
+@media(min-width:768px){.sec,.sec-alt,.sec-dark{padding:5rem 0}}
+
+.stitle{font-family:var(--serif);font-size:1.75rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;color:var(--ink);margin-bottom:.875rem}
+.stitle em{font-style:italic;color:var(--forest);font-weight:400}
+.stitle-white{color:#fff}
+.stitle-white em{color:#9ecfb0}
+.ssub{font-size:1rem;color:var(--ink2);line-height:1.7;margin-bottom:2rem}
+.ssub-light{color:rgba(255,255,255,.5)}
+@media(min-width:768px){.stitle{font-size:2.4rem}}
+
+/* ─── ANATOMY SECTION ─── */
+.anatomy-grid{display:flex;flex-direction:column;gap:2.5rem}
+.anatomy-callouts{display:flex;flex-direction:column;gap:1.375rem}
+.callout{display:flex;gap:.875rem;align-items:flex-start}
+.callout-num{font-family:var(--serif);font-size:1.4rem;font-weight:700;color:var(--cream3);line-height:1;flex-shrink:0;width:2rem;padding-top:.125rem}
+.callout-body strong{display:block;font-size:15px;font-weight:600;color:var(--ink);margin-bottom:.25rem}
+.callout-body span{font-size:14px;color:var(--ink3);line-height:1.6}
+@media(min-width:768px){
+  .anatomy-grid{flex-direction:row;align-items:center;gap:4rem}
+  .anatomy-grid > .reveal:first-child{flex:0 0 260px}
+  .anatomy-callouts{flex:1}
+}
+
+/* ─── PROOF GRID ─── */
+.proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--cream3);border:1px solid var(--cream3);border-radius:var(--rlg);overflow:hidden;margin-top:2.5rem}
+.proof-cell{background:var(--cream);padding:1.5rem 1.25rem}
+.proof-num{font-family:var(--serif);font-size:2rem;font-weight:700;letter-spacing:-.02em;color:var(--forest);line-height:1;margin-bottom:.25rem}
+.proof-label{font-size:13px;color:var(--ink);font-weight:600;margin-bottom:.25rem}
+.proof-desc{font-size:12px;color:var(--ink3);line-height:1.5}
+@media(min-width:640px){.proof-grid{grid-template-columns:repeat(4,1fr)}}
+
+/* ─── EDITORIAL ─── */
+.editorial{border-radius:var(--rlg);overflow:hidden}
+.ed-dark{background:var(--charcoal);padding:2rem 1.5rem}
+.ed-light{background:var(--cream2);padding:2rem 1.5rem}
+.ed-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:1rem}
+.ed-quote{font-family:var(--serif);font-size:1.25rem;font-weight:400;font-style:italic;line-height:1.55;color:#fff;margin-bottom:1rem}
+.ed-attr{font-size:13px;color:rgba(255,255,255,.4)}
+.specs-list{display:flex;flex-direction:column;gap:.125rem}
+.spec-row{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0;border-bottom:1px solid var(--cream3)}
+.spec-row:last-child{border-bottom:none}
+.spec-k{font-size:13px;color:var(--ink3)}
+.spec-v{font-size:13.5px;font-weight:600;color:var(--ink)}
+@media(min-width:640px){.editorial{display:grid;grid-template-columns:1fr 1fr}}
+
+/* ─── TESTIMONIALS ─── */
+.t-header{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1.75rem;flex-wrap:wrap}
+.t-score{font-family:var(--serif);font-size:3rem;font-weight:700;letter-spacing:-.03em;color:var(--ink);line-height:1}
+.t-score-sub{font-size:13px;color:var(--ink3)}
+.tgrid{display:grid;grid-template-columns:1fr;gap:1rem}
+.tcard{background:var(--cream);border:1px solid var(--cream3);border-radius:var(--rlg);padding:1.5rem;display:flex;flex-direction:column}
+.t-stars{display:flex;gap:3px;margin-bottom:.875rem}
+.t-q{font-family:var(--serif);font-size:1rem;font-style:italic;font-weight:400;line-height:1.65;color:var(--ink);flex:1;margin-bottom:.875rem}
+.t-result{font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--forest);text-transform:uppercase;margin-bottom:.875rem;padding-bottom:.875rem;border-bottom:1px solid var(--cream3)}
+.t-who{display:flex;align-items:center;gap:.625rem}
+.t-av{width:34px;height:34px;border-radius:50%;background:var(--forestl);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--forest2);flex-shrink:0}
+.t-nm{font-size:14px;font-weight:600;color:var(--ink)}
+.t-mt{font-size:12px;color:var(--ink3)}
+@media(min-width:640px){.tgrid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.tgrid{grid-template-columns:repeat(3,1fr)}}
+
+/* review bar */
+.rbar{background:var(--cream);border:1px solid var(--cream3);border-radius:var(--rlg);padding:1.5rem;margin-top:1.25rem;display:flex;flex-direction:column;gap:1.25rem}
+.rbar-top{display:flex;align-items:center;gap:1rem}
+.rbar-big{font-family:var(--serif);font-size:2.5rem;font-weight:700;color:var(--ink);line-height:1;letter-spacing:-.03em}
+.rbar-rows{display:flex;flex-direction:column;gap:5px}
+.rbar-row{display:flex;align-items:center;gap:.625rem;font-size:12px;color:var(--ink3)}
+.rbar-track{flex:1;height:5px;background:var(--cream3);border-radius:10px;overflow:hidden}
+.rbar-fill{height:100%;background:#c9963a;border-radius:10px}
+.rbar-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.rtag{background:var(--forestl);color:var(--forest2);padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600}
+@media(min-width:640px){.rbar{flex-direction:row;align-items:center;justify-content:space-between}}
+
+/* ─── OBJECTIONS ─── */
+.obj-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.75rem}
+.obj-card{background:var(--cream);border:1px solid var(--cream3);border-radius:var(--rlg);padding:1.5rem}
+.obj-q{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:.625rem;line-height:1.4}
+.obj-a{font-size:14px;color:var(--ink2);line-height:1.7;margin-bottom:.875rem}
+.obj-tag{display:inline-block;background:var(--forestl);color:var(--forest);font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px}
+@media(min-width:640px){.obj-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ─── STEPS ─── */
+.steps-grid{display:flex;flex-direction:column;gap:0;margin-top:1.75rem}
+.step{padding:1.5rem;border-bottom:1px solid var(--cream3);display:flex;gap:1rem;align-items:flex-start}
+.step:last-child{border-bottom:none}
+.step-num{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--cream3);line-height:1;flex-shrink:0;width:2.25rem}
+.step-title{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:.375rem}
+.step-desc{font-size:14px;color:var(--ink3);line-height:1.65}
+@media(min-width:768px){.steps-grid{flex-direction:row;gap:1px;background:var(--cream3);border:1px solid var(--cream3);border-radius:var(--rlg);overflow:hidden}.step{flex-direction:column;flex:1;border-bottom:none;background:var(--cream);padding:2rem 1.75rem}}
+
+/* ─── COMPARISON ─── */
+.ctable-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:1.75rem;border-radius:var(--rlg);border:1px solid var(--cream3)}
+.ctable{width:100%;min-width:480px;border-collapse:collapse;border-radius:var(--rlg);overflow:hidden}
+.ctable th{padding:.875rem 1rem;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.ctable th.hblank{background:var(--cream);text-align:left;color:var(--ink3)}
+.ctable th.hus{background:var(--forest);color:#fff;text-align:center}
+.ctable th.hthem{background:var(--cream2);color:var(--ink3);text-align:center}
+.ctable td{padding:.875rem 1rem;font-size:13.5px;border-top:1px solid var(--cream3);white-space:nowrap}
+.ctable td.cl{color:var(--ink2);background:var(--cream);white-space:normal;min-width:140px}
+.ctable td.cu{background:var(--forestl);text-align:center;color:var(--forest2);font-weight:600}
+.ctable td.ct{text-align:center;color:var(--ink3);background:var(--cream)}
+.chk{color:var(--forest)}
+.crs{opacity:.35}
+
+/* ─── SUSTAINABILITY ─── */
+.sustain-grid{display:flex;flex-direction:column;gap:2rem}
+.sustain-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
+.spill{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.12);padding:.5rem 1rem;border-radius:20px;font-size:13px}
+@media(min-width:768px){
+  .sustain-grid{flex-direction:row;align-items:center;gap:4rem}
+  .sustain-grid > .reveal:first-child{flex:1}
+  .sustain-grid > .reveal:last-child{flex:0 0 260px}
+}
+
+/* ─── OFFER BLOCK ─── */
+.offer-block{background:var(--forest2);border-radius:var(--rlg);padding:1.75rem 1.5rem;margin-top:1.75rem;position:relative;overflow:hidden}
+.offer-block::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.025);pointer-events:none}
+.offer-inner{position:relative;z-index:1}
+.offer-badge{display:inline-block;background:var(--gold);color:#fff;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:.875rem}
+.offer-title{font-family:var(--serif);font-size:1.4rem;font-weight:600;font-style:italic;color:#fff;line-height:1.3;margin-bottom:.75rem}
+.offer-desc{font-size:14px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:1.5rem}
+.offer-price-row{display:flex;align-items:flex-end;gap:1rem;margin-bottom:1.25rem;flex-wrap:wrap}
+.offer-was{font-size:14px;color:rgba(255,255,255,.4);text-decoration:line-through}
+.offer-now{font-family:var(--serif);font-size:2rem;font-weight:700;color:#fff;letter-spacing:-.02em;line-height:1}
+.offer-save{background:rgba(255,255,255,.12);color:#fff;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px}
+.btn-offer{width:100%;min-height:52px;padding:.875rem 1.5rem;background:#fff;color:var(--forest2);border:none;border-radius:var(--r);font-size:1rem;font-weight:600;transition:opacity .15s;margin-bottom:.75rem}
+.btn-offer:hover{opacity:.92}
+.offer-guar{display:flex;align-items:center;gap:.5rem;font-size:13px;color:rgba(255,255,255,.4)}
+@media(min-width:768px){.offer-inner{display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:start}.offer-cta-side{display:flex;flex-direction:column;min-width:200px}.offer-desc{margin-bottom:0}}
+
+/* ─── SPECS ─── */
+.specs-grid{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--cream3);border-radius:var(--rlg);overflow:hidden;margin-top:1.75rem}
+.spec-item{display:flex;justify-content:space-between;align-items:center;padding:.875rem 1.25rem;border-bottom:1px solid var(--cream3);gap:1rem;background:var(--cream)}
+.spec-item:last-child{border-bottom:none}
+.spec-item:nth-child(odd){background:var(--cream)}
+.spec-item:nth-child(even){background:var(--cream2)}
+.spec-k{font-size:14px;color:var(--ink3)}
+.spec-v{font-size:14px;font-weight:600;color:var(--ink);text-align:right}
+@media(min-width:640px){
+  .specs-grid{grid-template-columns:repeat(2,1fr)}
+  /* reset simple stripes, use border-based separation instead */
+  .spec-item:nth-child(odd){background:var(--cream)}
+  .spec-item:nth-child(even){background:var(--cream)}
+  .spec-item:nth-child(4n+3),.spec-item:nth-child(4n+4){background:var(--cream2)}
+  /* right-column items need left border */
+  .spec-item:nth-child(2n){border-left:1px solid var(--cream3)}
+}
+
+/* ─── FAQ ─── */
+.faq-section{background:var(--cream);padding:3.5rem 0}
+.faq-layout{display:flex;flex-direction:column;gap:2.5rem}
+.faq-intro .stitle{margin-bottom:1rem}
+.faq-intro p{font-size:1rem;color:var(--ink2);line-height:1.7;margin-bottom:1.5rem}
+.btn-faq-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--forest);color:#fff;padding:.75rem 1.375rem;border-radius:var(--r);font-size:.9375rem;font-weight:600;border:none;transition:background .15s}
+.btn-faq-cta:hover{background:var(--forest2)}
+.faq-list{display:flex;flex-direction:column;gap:.5rem}
+.faq-item{border:1px solid var(--cream3);border-radius:var(--rlg);overflow:hidden;background:var(--cream);transition:border-color .2s}
+.faq-item.open{border-color:var(--forest3)}
+.faq-trigger{width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.125rem 1.25rem;background:none;border:none;font-size:15px;font-weight:600;color:var(--ink);text-align:left;gap:.875rem;transition:color .15s;min-height:56px;line-height:1.4}
+.faq-trigger:hover,.faq-item.open .faq-trigger{color:var(--forest)}
+.faq-icon{width:26px;height:26px;flex-shrink:0;border-radius:50%;border:1.5px solid var(--cream3);display:flex;align-items:center;justify-content:center;transition:all .25s;background:var(--cream2)}
+.faq-item.open .faq-icon{background:var(--forest);border-color:var(--forest);transform:rotate(45deg)}
+.faq-item.open .faq-icon path{stroke:#fff}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1),padding .3s}
+.faq-item.open .faq-body{max-height:500px;padding-bottom:1.25rem}
+.faq-body-inner{padding:0 1.25rem}
+.faq-body-inner p{font-size:14px;color:var(--ink2);line-height:1.75}
+.faq-body-inner p+p{margin-top:.75rem}
+.faq-tag{display:inline-block;background:var(--forestl);color:var(--forest);font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;margin-top:.875rem}
+@media(min-width:900px){.faq-layout{flex-direction:row;gap:4rem;align-items:start}.faq-intro{flex:0 0 280px;position:sticky;top:6rem}.faq-list{flex:1}.faq-section{padding:5rem 0}}
+
+/* ─── VALUE STACK ─── */
+.vstack{background:var(--cream);border:1px solid var(--cream3);border-radius:var(--rlg);overflow:hidden}
+.vstack-header{background:var(--cream2);padding:.875rem 1.25rem;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+.vstack-row{display:flex;justify-content:space-between;align-items:center;padding:.875rem 1.25rem;border-top:1px solid var(--cream3);font-size:14px;gap:1rem}
+.vstack-name{color:var(--ink2);flex:1}
+.vstack-price{font-weight:600;color:var(--ink);flex-shrink:0}
+.vstack-price.green{color:var(--forest)}
+.vstack-total{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;border-top:2px solid var(--cream3)}
+.vstack-label{font-size:14px;font-weight:600;color:var(--ink)}
+.vstack-price-big{font-family:var(--serif);font-size:1.75rem;font-weight:700;color:var(--forest);letter-spacing:-.02em}
+
+/* ─── FINAL CTA ─── */
+.final-layout{display:flex;flex-direction:column;gap:2.5rem}
+.final-title{font-family:var(--serif);font-size:1.75rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;color:var(--ink);margin-bottom:1rem}
+.final-title em{font-style:italic;color:var(--forest);font-weight:400}
+.final-sub{font-size:1rem;color:var(--ink2);line-height:1.7;margin-bottom:1.5rem}
+.final-guar{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin-top:1rem}
+.fg-item{display:flex;align-items:center;gap:5px;font-size:13px;color:var(--ink3)}
+@media(min-width:900px){
+  .final-layout{flex-direction:row;align-items:start;gap:4rem}
+  .final-layout > .reveal:first-child{flex:1}
+  .final-layout > .reveal:last-child{flex:0 0 280px}
+  .final-title{font-size:2.2rem}
+}
+
+/* ─── FOOTER ─── */
+footer{background:var(--charcoal);padding:2rem 1.25rem;text-align:center}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:rgba(255,255,255,.5);margin-bottom:.5rem}
+.flogo span{color:#c9963a}
+.ftxt{font-size:13px;color:rgba(255,255,255,.25);line-height:1.6}
+
+/* ─── REVEAL ─── */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.vis{opacity:1;transform:none}
+.rd1{transition-delay:.1s}
+.rd2{transition-delay:.2s}
+.rd3{transition-delay:.3s}
+
+/* ─── ICON HELPERS ─── */
+.icon-check{display:inline-block;width:14px;height:14px;flex-shrink:0}
+
+/* ─── LARGE DESKTOP REFINEMENTS ─── */
+@media(min-width:1100px){
+  .wrap{padding:0 2.5rem}
+  .hero-copy{padding:4rem 4.5rem 4rem 5rem}
+  h1{font-size:3rem}
+  .stitle{font-size:2.6rem}
+  .sec,.sec-alt,.sec-dark{padding:6rem 0}
+  .faq-section{padding:6rem 0}
+  .faq-intro{flex:0 0 320px}
+  .anatomy-grid > .reveal:first-child{flex:0 0 300px}
+  .proof-grid{margin-top:3rem}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar" role="banner">
+  <div class="wrap"><p>Free shipping · <strong>30-day returns, no questions asked</strong> · 15-year frame warranty</p></div>
+</div>
+
+<!-- NAV -->
+<nav aria-label="Site navigation">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#" aria-label="Vernal home">Vernal<span class="logo-dot">.</span></a>
+    <div class="nav-right">
+      <span class="nav-pill">⭑ 4.8 · 2,400+ reviews</span>
+      <span class="nav-pill">15-yr warranty</span>
+    </div>
+  </div>
+</nav>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="stickyBar" role="complementary" aria-label="Quick purchase bar">
+  <div class="sticky-inner">
+    <div class="sticky-left">
+      <div class="sticky-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <rect x="2" y="9" width="16" height="2" rx="1" fill="#3a7050"/>
+          <rect x="5" y="11" width="2" height="7" rx="1" fill="#aaa"/>
+          <rect x="13" y="11" width="2" height="7" rx="1" fill="#aaa"/>
+          <rect x="3" y="17" width="5" height="1.5" rx=".75" fill="#777"/>
+          <rect x="12" y="17" width="5" height="1.5" rx=".75" fill="#777"/>
+          <rect x="5" y="7" width="10" height="1.5" rx=".75" fill="#555"/>
+        </svg>
+      </div>
+      <div class="sticky-info">
+        <div class="sticky-name">Vernal Standing Desk</div>
+        <div class="sticky-meta" id="stickyMeta">48″ White · Free shipping</div>
+      </div>
+    </div>
+    <div class="sticky-right">
+      <div class="sticky-price-wrap">
+        <div class="sticky-was">$599</div>
+        <div class="sticky-now">$459</div>
+      </div>
+      <button class="btn-sticky" onclick="document.getElementById('heroAddBtn').click()" aria-label="Add Vernal standing desk to cart">Add to cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section data-section="hero" data-section-type="pdp-hero">
+  <div class="hero">
+
+    <!-- Visual -->
+    <div class="hero-visual">
+      <div class="hero-svg-wrap">
+        <svg class="desk-scene" viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vernal standing desk with monitor and ergonomic setup">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3d3d3d"/><stop offset="100%" stop-color="#252525"/></linearGradient>
+            <linearGradient id="dt" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e8e3da"/><stop offset="100%" stop-color="#d4cec5"/></linearGradient>
+            <linearGradient id="mn" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1e2830"/><stop offset="100%" stop-color="#141b22"/></linearGradient>
+            <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="rgba(0,0,0,0.12)"/></filter>
+          </defs>
+          <!-- floor shadow -->
+          <ellipse cx="200" cy="468" rx="140" ry="10" fill="rgba(0,0,0,0.06)"/>
+          <!-- left leg outer -->
+          <rect x="70" y="200" width="26" height="210" rx="4" fill="url(#lg)"/>
+          <!-- left leg inner (telescoping stage) -->
+          <rect x="74" y="290" width="18" height="126" rx="3" fill="#252525"/>
+          <!-- left foot -->
+          <rect x="64" y="404" width="38" height="9" rx="3" fill="#1a1a1a"/>
+          <rect x="58" y="411" width="50" height="6" rx="3" fill="#111"/>
+          <!-- right leg outer -->
+          <rect x="304" y="200" width="26" height="210" rx="4" fill="url(#lg)"/>
+          <rect x="308" y="290" width="18" height="126" rx="3" fill="#252525"/>
+          <rect x="298" y="404" width="38" height="9" rx="3" fill="#1a1a1a"/>
+          <rect x="292" y="411" width="50" height="6" rx="3" fill="#111"/>
+          <!-- crossbar T-frame -->
+          <rect x="70" y="340" width="260" height="14" rx="4" fill="#1a1a1a"/>
+          <!-- cable tray -->
+          <rect x="90" y="336" width="220" height="7" rx="2" fill="#161616" opacity=".7"/>
+          <!-- desktop -->
+          <rect x="40" y="180" width="320" height="26" rx="6" fill="url(#dt)" filter="url(#sh)"/>
+          <rect x="40" y="180" width="320" height="20" rx="6" fill="#ddd8ce"/>
+          <!-- subtle grain lines -->
+          <line x1="80" y1="182" x2="80" y2="198" stroke="#cac5bb" stroke-width=".5" opacity=".5"/>
+          <line x1="140" y1="182" x2="140" y2="198" stroke="#cac5bb" stroke-width=".5" opacity=".5"/>
+          <line x1="200" y1="182" x2="200" y2="198" stroke="#cac5bb" stroke-width=".5" opacity=".5"/>
+          <line x1="260" y1="182" x2="260" y2="198" stroke="#cac5bb" stroke-width=".5" opacity=".5"/>
+          <line x1="320" y1="182" x2="320" y2="198" stroke="#cac5bb" stroke-width=".5" opacity=".5"/>
+          <rect x="40" y="198" width="320" height="8" rx="2" fill="#c8c2b8"/>
+          <!-- monitor arm -->
+          <rect x="194" y="138" width="5" height="44" rx="2" fill="#2a2a2a"/>
+          <rect x="183" y="135" width="26" height="6" rx="2" fill="#222"/>
+          <!-- monitor -->
+          <rect x="126" y="58" width="148" height="98" rx="6" fill="url(#mn)" filter="url(#sh)"/>
+          <rect x="130" y="62" width="140" height="90" rx="4" fill="#1c2a38"/>
+          <!-- screen content -->
+          <rect x="136" y="68" width="80" height="6" rx="2" fill="rgba(255,255,255,.15)"/>
+          <rect x="136" y="80" width="55" height="4" rx="2" fill="rgba(255,255,255,.08)"/>
+          <rect x="136" y="90" width="128" height="54" rx="3" fill="rgba(255,255,255,.04)"/>
+          <!-- monitor stand -->
+          <rect x="195" y="154" width="22" height="5" rx="2" fill="#1a1a1a"/>
+          <rect x="188" y="158" width="36" height="4" rx="2" fill="#141414"/>
+          <!-- keyboard -->
+          <rect x="110" y="183" width="118" height="9" rx="3" fill="#bab5aa" opacity=".75"/>
+          <!-- control panel -->
+          <rect x="304" y="183" width="38" height="9" rx="3" fill="#252525"/>
+          <circle cx="310" cy="187" r="2.5" fill="#3a7050" opacity=".9"/>
+          <circle cx="318" cy="187" r="2.5" fill="#3a3a3a"/>
+          <circle cx="326" cy="187" r="2.5" fill="#3a3a3a"/>
+          <circle cx="334" cy="187" r="2.5" fill="#3a3a3a"/>
+          <!-- height annotation -->
+          <line x1="22" y1="186" x2="22" y2="418" stroke="#3a7050" stroke-width=".8" stroke-dasharray="4,3" opacity=".5"/>
+          <polygon points="22,180 19,190 25,190" fill="#3a7050" opacity=".6"/>
+          <polygon points="22,424 19,414 25,414" fill="#3a7050" opacity=".6"/>
+          <text x="4" y="310" font-size="8" fill="#3a7050" font-family="Inter,sans-serif" opacity=".7" transform="rotate(-90,4,310)">24.9″–50.4″</text>
+          <!-- gap callout -->
+          <line x1="70" y1="290" x2="46" y2="258" stroke="#c9963a" stroke-width=".8" stroke-dasharray="3,2" opacity=".8"/>
+          <circle cx="70" cy="290" r="3" fill="#c9963a" opacity=".8"/>
+          <text x="4" y="256" font-size="8" fill="#c9963a" font-family="Inter,sans-serif" opacity=".9">&lt;0.001″</text>
+          <text x="10" y="266" font-size="8" fill="#c9963a" font-family="Inter,sans-serif" opacity=".7">gap</text>
+        </svg>
+        <!-- floating tags — hidden on very small screens to avoid overflow -->
+        <div class="ftag ftag1" aria-hidden="true">
+          <span class="dot" style="background:#3a7050"></span>
+          3-stage columns
+        </div>
+        <div class="ftag ftag2" aria-hidden="true">
+          <span class="dot" style="background:#c9963a"></span>
+          30,000+ lift tests
+        </div>
+        <!-- warranty badge -->
+        <div class="hero-badge" aria-label="15-year warranty">
+          <span class="hero-badge-num">15</span>
+          <span style="font-size:8px;color:rgba(255,255,255,.5);letter-spacing:.04em">YR</span>
+          <span class="hero-badge-lbl">WARRANTY</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copy -->
+    <div class="hero-copy">
+      <span class="eyebrow">Height-Adjustable Standing Desk</span>
+      <h1>The desk that stays <em>perfectly still</em> while you work.</h1>
+      <p class="hero-desc">Three-stage dual-motor legs engineered to &lt;0.001″ column gap tolerance. Built for all-day use — not just the idea of standing.</p>
+
+      <div class="stars-row">
+        <div class="stars" role="img" aria-label="4.8 out of 5 stars">
+          <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        </div>
+        <span class="rcount">4.8</span>
+        <span class="verified-badge">2,400+ verified reviews</span>
+      </div>
+
+      <div class="price-block">
+        <div class="price-was" aria-label="Was $599">Was $599</div>
+        <div class="price-row">
+          <span class="price-now" aria-label="Now $459">$459</span>
+          <span class="price-save">Save $140</span>
+        </div>
+        <p class="price-note">Free shipping · Arrives in 5–8 business days</p>
+      </div>
+
+      <!-- Urgency strip -->
+      <div class="urgency-strip" role="alert" aria-live="polite">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="#a07828" stroke-width="1.5" fill="none"/><path d="M8 5v3l2 2" stroke="#a07828" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <p><strong>Cable management bundle included free</strong> — a $79 value, this week only</p>
+      </div>
+
+      <!-- Variants -->
+      <div class="variants">
+        <div>
+          <p class="vlabel" id="size-label">Size</p>
+          <div class="vgrid" role="group" aria-labelledby="size-label">
+            <button class="vbtn" onclick="selSize(this)" aria-pressed="false">40″ × 30″</button>
+            <button class="vbtn on" onclick="selSize(this)" aria-pressed="true">48″ × 30″</button>
+            <button class="vbtn" onclick="selSize(this)" aria-pressed="false">60″ × 30″</button>
+          </div>
+        </div>
+        <div>
+          <p class="vlabel" id="finish-label">Finish</p>
+          <div class="vgrid" role="group" aria-labelledby="finish-label">
+            <button class="cbtn on" onclick="selColor(this)" aria-pressed="true"><span class="cdot" style="background:#f0ece5;border:1px solid #ccc" aria-hidden="true"></span>White</button>
+            <button class="cbtn" onclick="selColor(this)" aria-pressed="false"><span class="cdot" style="background:#7a5a38" aria-hidden="true"></span>Walnut</button>
+            <button class="cbtn" onclick="selColor(this)" aria-pressed="false"><span class="cdot" style="background:#baa882" aria-hidden="true"></span>Light Walnut</button>
+            <button class="cbtn" onclick="selColor(this)" aria-pressed="false"><span class="cdot" style="background:#cbbf9a" aria-hidden="true"></span>Bamboo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-block">
+        <button class="btn-add" id="heroAddBtn" aria-label="Add Vernal standing desk to cart — $459">Add to cart — $459</button>
+        <button class="btn-wl" aria-label="Save to wishlist">Save to wishlist</button>
+      </div>
+
+      <div class="trust-row" role="list" aria-label="Purchase guarantees">
+        <span class="tr-item" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3L12 4" stroke="#3a7050" stroke-width="1.5" stroke-linecap="round"/></svg>
+          30-day free returns
+        </span>
+        <span class="tr-item" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3L12 4" stroke="#3a7050" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Free shipping
+        </span>
+        <span class="tr-item" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3L12 4" stroke="#3a7050" stroke-width="1.5" stroke-linecap="round"/></svg>
+          No-wobble guarantee
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar" aria-hidden="true">
+  <div class="mtrack">
+    <span class="mitem">15-year frame warranty</span>
+    <span class="mitem">30-day free returns</span>
+    <span class="mitem">30,000 lift cycles tested</span>
+    <span class="mitem">Third-party certified</span>
+    <span class="mitem">Free shipping</span>
+    <span class="mitem">&lt;48dB motor noise</span>
+    <span class="mitem">397 lbs load capacity</span>
+    <span class="mitem">4 memory presets</span>
+    <span class="mitem">15-year frame warranty</span>
+    <span class="mitem">30-day free returns</span>
+    <span class="mitem">30,000 lift cycles tested</span>
+    <span class="mitem">Third-party certified</span>
+    <span class="mitem">Free shipping</span>
+    <span class="mitem">&lt;48dB motor noise</span>
+    <span class="mitem">397 lbs load capacity</span>
+    <span class="mitem">4 memory presets</span>
+  </div>
+</div>
+
+<!-- PROOF STRIP -->
+<div class="proof-strip" role="region" aria-label="Key statistics">
+  <div class="wrap">
+    <div class="proof-strip-inner">
+      <div class="ps-cell"><div class="ps-num">30K+</div><div class="ps-label">Lift cycles tested</div></div>
+      <div class="ps-cell"><div class="ps-num">&lt;0.001″</div><div class="ps-label">Column tolerance</div></div>
+      <div class="ps-cell"><div class="ps-num">15 yr</div><div class="ps-label">Frame warranty</div></div>
+      <div class="ps-cell"><div class="ps-num">4.8★</div><div class="ps-label">2,400+ reviews</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ANATOMY -->
+<section data-section="anatomy" data-section-type="pdp-anatomy" class="sec">
+  <div class="wrap">
+    <div class="anatomy-grid">
+      <div class="reveal" style="flex-shrink:0">
+        <svg viewBox="0 0 240 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:240px;margin:0 auto" role="img" aria-label="Exploded view of three-stage leg columns">
+          <defs>
+            <linearGradient id="a1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#3d3d3d"/><stop offset="100%" stop-color="#2a2a2a"/></linearGradient>
+            <linearGradient id="a2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2d2d2d"/><stop offset="100%" stop-color="#1e1e1e"/></linearGradient>
+            <linearGradient id="a3" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#222"/><stop offset="100%" stop-color="#141414"/></linearGradient>
+          </defs>
+          <!-- Stage 3 outer -->
+          <rect x="80" y="18" width="68" height="96" rx="6" fill="url(#a1)"/>
+          <text x="156" y="50" font-size="9" fill="#3a7050" font-family="Inter,sans-serif" font-weight="500">Stage 3</text>
+          <line x1="152" y1="48" x2="152" y2="65" stroke="#3a7050" stroke-width=".8" stroke-dasharray="3,2" opacity=".8"/>
+          <circle cx="152" cy="67" r="3" fill="#3a7050" opacity=".8"/>
+          <!-- Gap indicator -->
+          <line x1="72" y1="112" x2="44" y2="94" stroke="#c9963a" stroke-width=".8" stroke-dasharray="3,2" opacity=".9"/>
+          <circle cx="72" cy="112" r="3" fill="#c9963a" opacity=".9"/>
+          <text x="2" y="92" font-size="8.5" fill="#c9963a" font-family="Inter,sans-serif" font-weight="500">&lt;0.001″</text>
+          <text x="8" y="103" font-size="8" fill="#c9963a" font-family="Inter,sans-serif" opacity=".8">gap</text>
+          <!-- Stage 2 -->
+          <rect x="86" y="112" width="56" height="104" rx="5" fill="url(#a2)"/>
+          <text x="150" y="156" font-size="9" fill="#7a7670" font-family="Inter,sans-serif">Stage 2</text>
+          <line x1="146" y1="154" x2="146" y2="168" stroke="#7a7670" stroke-width=".8" stroke-dasharray="3,2" opacity=".6"/>
+          <circle cx="146" cy="170" r="2.5" fill="#7a7670" opacity=".6"/>
+          <!-- Stage 1 -->
+          <rect x="93" y="214" width="42" height="96" rx="4" fill="url(#a3)"/>
+          <text x="142" y="256" font-size="9" fill="#7a7670" font-family="Inter,sans-serif">Stage 1</text>
+          <line x1="138" y1="254" x2="138" y2="268" stroke="#7a7670" stroke-width=".8" stroke-dasharray="3,2" opacity=".6"/>
+          <circle cx="138" cy="270" r="2.5" fill="#7a7670" opacity=".6"/>
+          <!-- Motor -->
+          <rect x="78" y="308" width="72" height="28" rx="5" fill="#161616"/>
+          <rect x="98" y="314" width="32" height="11" rx="2" fill="#202020"/>
+          <text x="154" y="326" font-size="9" fill="#3a7050" font-family="Inter,sans-serif" font-weight="500">Dual motor</text>
+          <line x1="150" y1="324" x2="148" y2="322" stroke="#3a7050" stroke-width=".7" opacity=".8"/>
+          <!-- Foot -->
+          <rect x="70" y="334" width="88" height="13" rx="4" fill="#111"/>
+          <rect x="62" y="344" width="104" height="7" rx="3" fill="#0a0a0a"/>
+          <!-- Height bracket -->
+          <line x1="36" y1="18" x2="36" y2="350" stroke="#2a5438" stroke-width=".8" opacity=".3"/>
+          <line x1="32" y1="18" x2="40" y2="18" stroke="#2a5438" stroke-width=".8" opacity=".3"/>
+          <line x1="32" y1="350" x2="40" y2="350" stroke="#2a5438" stroke-width=".8" opacity=".3"/>
+          <text x="2" y="192" font-size="8" fill="#2a5438" font-family="Inter,sans-serif" opacity=".6" transform="rotate(-90,2,192)">24.9″ – 50.4″</text>
+        </svg>
+      </div>
+
+      <div class="anatomy-callouts reveal rd1">
+        <span class="eyebrow">Engineering explainer</span>
+        <h2 class="stitle">Why <em>three stages</em> change everything.</h2>
+        <div class="callout">
+          <div class="callout-num" aria-hidden="true">01</div>
+          <div class="callout-body">
+            <strong>Three-stage telescoping columns</strong>
+            <span>Standard desks use two-stage legs — more gap, more lateral sway. Three stages distribute extension across more sections, each with &lt;0.001″ precision glide tolerance. Near-zero wobble at any height.</span>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout-num" aria-hidden="true">02</div>
+          <div class="callout-body">
+            <strong>T-frame, not C-frame</strong>
+            <span>C-frames anchor only at the back, leaving the front unsupported. Vernal's T-frame crossbar runs center-span — supporting load front-to-back and side-to-side at every height.</span>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout-num" aria-hidden="true">03</div>
+          <div class="callout-body">
+            <strong>One motor per leg, perfectly synced</strong>
+            <span>Dual independent motors synchronize to &lt;0.8mm height variance. If one encounters resistance, both stop and reverse. No tilt under uneven loads.</span>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout-num" aria-hidden="true">04</div>
+          <div class="callout-body">
+            <strong>Third-party test report — publicly available</strong>
+            <span>Every spec is verified by an independent accredited lab, not self-reported. Load capacity, noise, lift cycles, column gap. We publish the full report. Most brands do not.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proof-grid reveal rd2">
+      <div class="proof-cell">
+        <div class="proof-num">397<span style="font-size:1.1rem">lbs</span></div>
+        <div class="proof-label">Verified load</div>
+        <div class="proof-desc">Constant 1.6″/s lift speed regardless of load</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">&lt;0.001″</div>
+        <div class="proof-label">Column gap</div>
+        <div class="proof-desc">Precision-engineered glides, lab verified</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">30K+</div>
+        <div class="proof-label">Lift cycles</div>
+        <div class="proof-desc">15 transitions/day for 5+ years equivalent</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">&lt;48dB</div>
+        <div class="proof-label">Motor noise</div>
+        <div class="proof-desc">Quieter than a library at full load</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDITORIAL PULLQUOTE -->
+<section data-section="editorial" class="sec-alt">
+  <div class="wrap">
+    <div class="editorial reveal">
+      <div class="ed-dark">
+        <p class="ed-label">TechRadar independent review</p>
+        <p class="ed-quote">"At its maximum height — which I use as a 6'7″ person — I came away impressed with how sturdy it is. The higher these desks go, the more wobble becomes a factor. Happily, the Vernal never wobbled enough to cause motion sickness while typing."</p>
+        <p class="ed-attr">TechRadar · Verified purchase · Extended review</p>
+      </div>
+      <div class="ed-light">
+        <p style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:1.25rem;font-weight:600">Quick specs</p>
+        <div class="specs-list">
+          <div class="spec-row"><span class="spec-k">Height range</span><span class="spec-v">24.9″ – 50.4″</span></div>
+          <div class="spec-row"><span class="spec-k">Lifting speed</span><span class="spec-v">1.57″/s constant</span></div>
+          <div class="spec-row"><span class="spec-k">Motor noise</span><span class="spec-v">&lt;48dB</span></div>
+          <div class="spec-row"><span class="spec-k">Desktop depth</span><span class="spec-v">27.6″</span></div>
+          <div class="spec-row"><span class="spec-k">Desktop thickness</span><span class="spec-v">1″ reinforced</span></div>
+          <div class="spec-row"><span class="spec-k">Memory presets</span><span class="spec-v">4 heights</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section data-section="social-proof" data-section-type="pdp-testimonials" class="sec">
+  <div class="wrap">
+    <div class="t-header reveal">
+      <div>
+        <span class="eyebrow">Verified buyers</span>
+        <h2 class="stitle" style="margin-bottom:0">After <em>months</em> of daily use.</h2>
+      </div>
+      <div>
+        <div class="t-score">4.8</div>
+        <div class="t-score-sub">out of 5 · 2,400+ reviews</div>
+      </div>
+    </div>
+    <div class="tgrid">
+      <div class="tcard reveal">
+        <div class="t-stars" role="img" aria-label="5 stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="t-q">"I was on my third desk in two years after wobble ruined the first two. With two monitors and a full tower at standing height — nothing. I typed hard deliberately to test it. Zero movement."</p>
+        <div class="t-result">Back pain → gone after 8 weeks</div>
+        <div class="t-who">
+          <div class="t-av" aria-hidden="true">MR</div>
+          <div><div class="t-nm">Marcus R.</div><div class="t-mt">Software engineer · 60″ Walnut · Verified buyer</div></div>
+        </div>
+      </div>
+      <div class="tcard reveal rd1">
+        <div class="t-stars" role="img" aria-label="5 stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="t-q">"Assembly: 35 minutes, alone. That includes reading the instructions. Every part was labelled. I've built a lot of furniture — this was the easiest desk I've assembled."</p>
+        <div class="t-result">Afternoon energy crash → eliminated</div>
+        <div class="t-who">
+          <div class="t-av" aria-hidden="true">JL</div>
+          <div><div class="t-nm">Jamie L.</div><div class="t-mt">Designer · 48″ White · Verified buyer</div></div>
+        </div>
+      </div>
+      <div class="tcard reveal rd2">
+        <div class="t-stars" role="img" aria-label="5 stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="t-q">"Screen doesn't vibrate when I type. That's the one thing my last three desks failed. Motor is silent enough that I forget it's electric. This is what I thought standing desks were supposed to feel like."</p>
+        <div class="t-result">Focus quality noticeably improved</div>
+        <div class="t-who">
+          <div class="t-av" aria-hidden="true">DK</div>
+          <div><div class="t-nm">Daniel K.</div><div class="t-mt">Analyst · 48″ Walnut · Verified buyer</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="rbar reveal">
+      <div class="rbar-top">
+        <div class="rbar-big">4.8</div>
+        <div>
+          <div class="stars" role="img" aria-label="4.8 stars" style="margin-bottom:4px"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+          <div style="font-size:13px;color:var(--ink3)">2,400+ verified reviews</div>
+        </div>
+      </div>
+      <div class="rbar-rows">
+        <div class="rbar-row">5★<div class="rbar-track"><div class="rbar-fill" style="width:84%"></div></div>84%</div>
+        <div class="rbar-row">4★<div class="rbar-track"><div class="rbar-fill" style="width:11%"></div></div>11%</div>
+        <div class="rbar-row">3★<div class="rbar-track"><div class="rbar-fill" style="width:3%"></div></div>3%</div>
+        <div class="rbar-row">2★<div class="rbar-track"><div class="rbar-fill" style="width:1%"></div></div>1%</div>
+        <div class="rbar-row">1★<div class="rbar-track"><div class="rbar-fill" style="width:1%"></div></div>1%</div>
+      </div>
+      <div class="rbar-tags">
+        <span class="rtag">Stability ✓</span>
+        <span class="rtag">Silent motor ✓</span>
+        <span class="rtag">Easy assembly ✓</span>
+        <span class="rtag">Build quality ✓</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTION HANDLER -->
+<section data-section="objections" class="sec-alt">
+  <div class="wrap">
+    <span class="eyebrow reveal">Honest answers</span>
+    <h2 class="stitle reveal">Every question you'd want answered <em>before buying.</em></h2>
+    <p class="ssub reveal">We'd rather address the hard ones now than have you discover them after delivery.</p>
+    <div class="obj-grid">
+      <div class="obj-card reveal">
+        <div class="obj-q">"Will it actually be stable at full height?"</div>
+        <div class="obj-a">Three-stage columns with &lt;0.001″ tolerance, T-frame centering, 397 lb tested capacity. We publish the independent lab report so you can check the numbers, not just our claims.</div>
+        <span class="obj-tag">Lab-verified · Report publicly available</span>
+      </div>
+      <div class="obj-card reveal rd1">
+        <div class="obj-q">"What if the desktop arrives damaged?"</div>
+        <div class="obj-a">Take photos and contact us. We ship a replacement without requiring you to return the damaged piece or disassemble anything you've built. Dozens of reviews confirm this.</div>
+        <span class="obj-tag">Replacement shipped · No return required</span>
+      </div>
+      <div class="obj-card reveal">
+        <div class="obj-q">"Can I really assemble it alone?"</div>
+        <div class="obj-a">Most customers do it alone in 35 minutes. Frame arrives pre-assembled, desktop mounts in two steps, all parts are labelled. A hex key is included — nothing else needed.</div>
+        <span class="obj-tag">Average 35 min · No extra tools</span>
+      </div>
+      <div class="obj-card reveal rd1">
+        <div class="obj-q">"Why is the warranty 15 years?"</div>
+        <div class="obj-a">Because we tested the frame to 30,000 lift cycles — 15 years of daily use. The warranty matches the testing. Frame, motors, columns, and control system all covered.</div>
+        <span class="obj-tag">Tested to 30,000 cycles · Parts replaced</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section data-section="process" class="sec">
+  <div class="wrap">
+    <span class="eyebrow reveal">Setup</span>
+    <h2 class="stitle reveal">From box to <em>ready in 35 minutes.</em></h2>
+    <p class="ssub reveal">Pre-assembled frame, two-step desktop mount, one hex key. That's it.</p>
+    <div class="steps-grid reveal">
+      <div class="step">
+        <div class="step-num" aria-hidden="true">01</div>
+        <div><div class="step-title">Unbox and lay out</div><div class="step-desc">Everything labelled with part numbers. No ambiguous "Part A" guessing. Spread on the floor and you'll see immediately how it fits together.</div></div>
+      </div>
+      <div class="step">
+        <div class="step-num" aria-hidden="true">02</div>
+        <div><div class="step-title">Build the frame</div><div class="step-desc">Attach legs to the pre-assembled crossbar. All bolts pre-threaded. The hex key in the box handles every fastener. Takes around 10 minutes.</div></div>
+      </div>
+      <div class="step">
+        <div class="step-num" aria-hidden="true">03</div>
+        <div><div class="step-title">Mount and program</div><div class="step-desc">Desktop attaches in two steps via pre-drilled points. Plug in, run the calibration cycle, save your sitting and standing heights. Done.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section data-section="comparison" class="sec-alt">
+  <div class="wrap">
+    <span class="eyebrow reveal">Head to head</span>
+    <h2 class="stitle reveal">What you trade away with <em>cheaper desks.</em></h2>
+    <div class="ctable-wrap reveal">
+      <table class="ctable">
+        <thead>
+          <tr>
+            <th class="hblank" scope="col"></th>
+            <th class="hus" scope="col">Vernal</th>
+            <th class="hthem" scope="col">Budget (&lt;$300)</th>
+            <th class="hthem" scope="col">Mid-range ($350–500)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="cl">Three-stage leg columns</td><td class="cu"><span class="chk">✓</span></td><td class="ct"><span class="crs">✗</span></td><td class="ct"><span class="crs">✗</span></td></tr>
+          <tr><td class="cl">Dual-motor T-frame</td><td class="cu"><span class="chk">✓</span></td><td class="ct"><span class="crs">✗</span></td><td class="ct">Some</td></tr>
+          <tr><td class="cl">3rd-party stability report (public)</td><td class="cu"><span class="chk">✓ Public</span></td><td class="ct"><span class="crs">✗</span></td><td class="ct"><span class="crs">✗</span></td></tr>
+          <tr><td class="cl">Frame warranty</td><td class="cu"><span class="chk">15 years</span></td><td class="ct">1–2 yr</td><td class="ct">5 yr</td></tr>
+          <tr><td class="cl">Obstacle detection</td><td class="cu"><span class="chk">✓</span></td><td class="ct"><span class="crs">✗</span></td><td class="ct">Some</td></tr>
+          <tr><td class="cl">Cable management included</td><td class="cu"><span class="chk">Included</span></td><td class="ct"><span class="crs">✗</span></td><td class="ct">Add-on</td></tr>
+          <tr><td class="cl">Return policy</td><td class="cu"><span class="chk">30-day free</span></td><td class="ct">15 days</td><td class="ct">30 days</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SUSTAINABILITY -->
+<section data-section="sustainability" class="sec-dark">
+  <div class="wrap">
+    <div class="sustain-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="color:#9ecfb0">Materials &amp; longevity</span>
+        <h2 class="stitle stitle-white">Built to last. <em>Not to be replaced.</em></h2>
+        <p class="ssub ssub-light">The most sustainable desk is one you never need to buy again. That's why we start with a 15-year warranty and stock replacement parts beyond 10 years — not planned obsolescence.</p>
+        <div class="sustain-pills">
+          <span class="spill">FSC-certified laminate</span>
+          <span class="spill">Recycled wood cores</span>
+          <span class="spill">Non-toxic ABS edging</span>
+          <span class="spill">Bamboo option</span>
+          <span class="spill">Parts stocked 10+ years</span>
+          <span class="spill">15-yr frame warranty</span>
+        </div>
+      </div>
+      <div class="reveal rd1" style="text-align:center">
+        <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:240px;margin:0 auto" role="img" aria-label="Circular sustainability diagram showing FSC certification, 15-year warranty, and parts availability">
+          <circle cx="140" cy="140" r="115" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+          <circle cx="140" cy="140" r="86" fill="none" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+          <path d="M140 25 A115 115 0 0 1 240 197" fill="none" stroke="rgba(58,112,80,.5)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M240 197 A115 115 0 0 1 40 197" fill="none" stroke="rgba(176,144,60,.35)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M40 197 A115 115 0 0 1 140 25" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="140" cy="140" r="44" fill="rgba(255,255,255,.04)"/>
+          <text x="140" y="134" text-anchor="middle" font-family="Lora,serif" font-size="12" font-style="italic" fill="rgba(255,255,255,.45)">Built</text>
+          <text x="140" y="152" text-anchor="middle" font-family="Lora,serif" font-size="12" font-style="italic" fill="rgba(255,255,255,.45)">to last</text>
+          <text x="176" y="55" font-size="9.5" fill="rgba(58,112,80,.85)" font-family="Inter,sans-serif">FSC certified</text>
+          <text x="204" y="218" font-size="9.5" fill="rgba(176,144,60,.75)" font-family="Inter,sans-serif">15-yr warranty</text>
+          <text x="18" y="218" font-size="9.5" fill="rgba(255,255,255,.35)" font-family="Inter,sans-serif">Parts 10+ yr</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER — IRRESPONSIBILITY THRESHOLD -->
+<section data-section="offer" class="sec-alt">
+  <div class="wrap">
+    <span class="eyebrow reveal">Limited offer</span>
+    <h2 class="stitle reveal">The desk — <em>plus everything you need</em> to run it properly.</h2>
+    <p class="ssub reveal">Every order this week includes the full cable management bundle — a $79 value most buyers add separately anyway.</p>
+    <div class="offer-block reveal">
+      <div class="offer-inner">
+        <div>
+          <span class="offer-badge">This week only</span>
+          <h3 class="offer-title">Desk + full cable management kit — included free.</h3>
+          <p class="offer-desc">The crossbar cable tray is built in. But the full bundle — Velcro routing kit, grommet caps, extra cable clips — ships free this week. If you were planning to buy cable management separately, you just saved $79.</p>
+          <div class="offer-price-row">
+            <span class="offer-was">Value: $538</span>
+            <span class="offer-now">$459</span>
+            <span class="offer-save">Save $140</span>
+          </div>
+        </div>
+        <div class="offer-cta-side">
+          <button class="btn-offer" onclick="document.getElementById('heroAddBtn').click()" aria-label="Add to cart — $459">Add to cart — $459</button>
+          <div class="offer-guar">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M2 6.5l3 3L11 3" stroke="rgba(255,255,255,.4)" stroke-width="1.3" stroke-linecap="round"/></svg>
+            30-day free returns
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FULL SPECS -->
+<section data-section="specs" class="sec">
+  <div class="wrap">
+    <span class="eyebrow reveal">Full specifications</span>
+    <h2 class="stitle reveal">Every number <em>independently verified.</em></h2>
+    <div class="specs-grid reveal">
+      <div class="spec-item"><span class="spec-k">Height range</span><span class="spec-v">24.9″ – 50.4″</span></div>
+      <div class="spec-item"><span class="spec-k">Desktop sizes</span><span class="spec-v">40″, 48″, 60″ × 27.6″</span></div>
+      <div class="spec-item"><span class="spec-k">Lifting speed</span><span class="spec-v">1.57″/s constant</span></div>
+      <div class="spec-item"><span class="spec-k">Motor noise</span><span class="spec-v">&lt;48dB</span></div>
+      <div class="spec-item"><span class="spec-k">Max load capacity</span><span class="spec-v">397 lbs verified</span></div>
+      <div class="spec-item"><span class="spec-k">Column gap tolerance</span><span class="spec-v">&lt;0.001″</span></div>
+      <div class="spec-item"><span class="spec-k">Leg stages</span><span class="spec-v">Three-stage telescoping</span></div>
+      <div class="spec-item"><span class="spec-k">Frame type</span><span class="spec-v">Dual-motor T-frame</span></div>
+      <div class="spec-item"><span class="spec-k">Desktop thickness</span><span class="spec-v">1″ (25mm) reinforced</span></div>
+      <div class="spec-item"><span class="spec-k">Memory presets</span><span class="spec-v">4 heights</span></div>
+      <div class="spec-item"><span class="spec-k">Obstacle detection</span><span class="spec-v">Yes — stops + reverses</span></div>
+      <div class="spec-item"><span class="spec-k">Cable management</span><span class="spec-v">Crossbar + under-desk tray</span></div>
+      <div class="spec-item"><span class="spec-k">Desktop edge finish</span><span class="spec-v">Rounded ABS laser-edge</span></div>
+      <div class="spec-item"><span class="spec-k">Fits users</span><span class="spec-v">3'11″ – 6'8″</span></div>
+      <div class="spec-item"><span class="spec-k">Lift cycles tested</span><span class="spec-v">30,000+ (independent lab)</span></div>
+      <div class="spec-item"><span class="spec-k">Frame warranty</span><span class="spec-v">15 years</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section data-section="faq" data-section-type="pdp-faq" class="faq-section">
+  <div class="wrap">
+    <div class="faq-layout">
+      <div class="faq-intro reveal">
+        <span class="eyebrow">Common questions</span>
+        <h2 class="stitle">Every question you'd want answered <em>before buying.</em></h2>
+        <p>We'd rather you know everything upfront. These are the real questions buyers ask — answered without marketing language.</p>
+        <button class="btn-faq-cta" onclick="document.getElementById('heroAddBtn').click()" aria-label="Add to cart — $459">
+          Add to cart — $459
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="faq-list reveal rd1">
+
+        <div class="faq-item open">
+          <button class="faq-trigger" onclick="toggleFaq(this)" aria-expanded="true">
+            Will it actually stay stable at full standing height?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#4a4640" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body" id="faq-body-1">
+            <div class="faq-body-inner">
+              <p>Yes — this is what we get asked most. Three-stage columns with &lt;0.001″ tolerance, T-frame centering, and a 397 lb tested load capacity means wobble at standing height is within the range of the best desks available.</p>
+              <p>We publish the third-party lab report so you can verify the numbers rather than trust our marketing. Most brands don't offer this.</p>
+              <span class="faq-tag">Lab-verified · Report publicly available</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)" aria-expanded="false">
+            What does the 15-year warranty actually cover?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#4a4640" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>Frame, motors, telescoping columns, and digital control system: 15 years. Desktop surfaces: 5 years. Accessories: 1 year.</p>
+              <p>Warranty claims don't require returning the desk. We ship replacement parts to you. The 15-year figure matches our testing: 30,000 lift cycles, equivalent to 15 years at 15 daily transitions.</p>
+              <span class="faq-tag">Frame + motors + control system · Parts replaced</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)" aria-expanded="false">
+            Can I assemble it by myself?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#4a4640" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>Most customers do it alone in 30–45 minutes. The frame ships largely pre-assembled. Desktop mounting is a two-step process using pre-drilled points. All hardware is labelled and a hex key is included — nothing else needed.</p>
+              <p>If you want to check first, our assembly video runs 12 minutes and shows the full process. Many customers describe it as the easiest desk they've assembled.</p>
+              <span class="faq-tag">Average 35 min · One person · No extra tools</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)" aria-expanded="false">
+            What if the desktop arrives damaged?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#4a4640" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>It happens occasionally. Photograph the damage and contact us. We ship a replacement directly — no return required, no disassembly needed.</p>
+              <p>This scenario comes up in dozens of reviews, and the consistent experience is that replacements ship quickly and the process is handled well.</p>
+              <span class="faq-tag">Replacement shipped · No return required</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)" aria-expanded="false">
+            Will it work for my height?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#4a4640" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>The range is 24.9″ to 50.4″, covering users from 3'11" to 6'8". Ergonomic sitting height is roughly your height × 0.4, standing is height × 0.62 — both land inside this range for nearly everyone.</p>
+              <p>Four memory presets mean you save your exact heights once and switch between them in a single press. Two people of different heights can each store their own presets.</p>
+              <span class="faq-tag">3'11″ – 6'8″ · 4 memory presets</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)" aria-expanded="false">
+            How loud is the motor?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#4a4640" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>Under 48dB — a typical library is around 50dB. You can adjust during video calls without it registering on the other end. Tested across the full load range from empty to max capacity.</p>
+              <p>Obstacle detection is also silent — if something's underneath while lowering, the desk stops and reverses automatically without any noise or jolt.</p>
+              <span class="faq-tag">&lt;48dB verified · Silent obstacle detection</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)" aria-expanded="false">
+            Which size should I choose?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#4a4640" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>48″ handles a dual-monitor setup with room for a keyboard and peripherals — it's the most popular size. 60″ is for triple monitors or wide setups. 40″ suits single-monitor or compact spaces.</p>
+              <p>All three use the same frame, motors, and warranty. Only the desktop dimensions change. Load capacity is identical across all sizes.</p>
+              <span class="faq-tag">48″ most popular · All sizes same warranty</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)" aria-expanded="false">
+            Can I return it if it's not right?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#4a4640" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>Yes — 30 days from delivery, no questions asked. If you set it up and it's not right, contact us and we'll arrange free collection. We'd rather process a return than have you keep something you're not happy with.</p>
+              <p>The 30-day window gives you time to properly evaluate it under your actual setup — dual monitors, heavy peripherals, standing at full height.</p>
+              <span class="faq-tag">30-day free returns · Free collection</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section data-section="final-cta" data-section-type="pdp-final-cta" class="sec-alt">
+  <div class="wrap">
+    <div class="final-layout">
+      <div class="reveal">
+        <h2 class="final-title">A workspace that works as <em>hard as you do.</em></h2>
+        <p class="final-sub">Free shipping. 30-day returns. 15-year warranty. If it wobbles when you set it up — return it. That's the deal, in plain language.</p>
+        <div class="vstack">
+          <div class="vstack-header">What's included with your order</div>
+          <div class="vstack-row"><span class="vstack-name">Vernal standing desk (frame + desktop)</span><span class="vstack-price">$459</span></div>
+          <div class="vstack-row"><span class="vstack-name">Crossbar cable tray (built-in)</span><span class="vstack-price green">Included</span></div>
+          <div class="vstack-row"><span class="vstack-name">Under-desk cable management tray</span><span class="vstack-price green">Included</span></div>
+          <div class="vstack-row"><span class="vstack-name">Full cable routing bundle ($79 value)</span><span class="vstack-price green">Free this week</span></div>
+          <div class="vstack-row"><span class="vstack-name">4-preset digital handset + hex tool</span><span class="vstack-price green">Included</span></div>
+          <div class="vstack-row"><span class="vstack-name">Free shipping + 15-year frame warranty</span><span class="vstack-price green">Included</span></div>
+          <div class="vstack-total">
+            <span class="vstack-label">Your price today</span>
+            <span class="vstack-price-big">$459</span>
+          </div>
+        </div>
+        <button class="btn-add" style="margin-top:1.25rem" onclick="document.getElementById('heroAddBtn').click()" aria-label="Add Vernal standing desk to cart — $459">Add to cart — Free shipping</button>
+        <div class="final-guar">
+          <span class="fg-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3L12 4" stroke="#3a7050" stroke-width="1.4" stroke-linecap="round"/></svg>30-day free returns</span>
+          <span class="fg-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3L12 4" stroke="#3a7050" stroke-width="1.4" stroke-linecap="round"/></svg>No-wobble guarantee</span>
+          <span class="fg-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3L12 4" stroke="#3a7050" stroke-width="1.4" stroke-linecap="round"/></svg>Ships in 5–8 days</span>
+        </div>
+      </div>
+
+      <div class="reveal rd1">
+        <svg viewBox="0 0 240 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px;margin:0 auto" role="img" aria-label="Diagram showing desk height range from sitting to standing position">
+          <rect x="30" y="110" width="180" height="14" rx="4" fill="#ddd8ce"/>
+          <rect x="72" y="122" width="16" height="148" rx="3" fill="#3a3a3a"/>
+          <rect x="152" y="122" width="16" height="148" rx="3" fill="#3a3a3a"/>
+          <rect x="56" y="268" width="128" height="8" rx="2" fill="#252525"/>
+          <rect x="30" y="258" width="180" height="12" rx="4" fill="#e8e4da" opacity=".4"/>
+          <rect x="72" y="268" width="12" height="90" rx="3" fill="#3a3a3a" opacity=".25"/>
+          <rect x="156" y="268" width="12" height="90" rx="3" fill="#3a3a3a" opacity=".25"/>
+          <line x1="18" y1="116" x2="18" y2="270" stroke="#3a7050" stroke-width="1.1" stroke-dasharray="4,3"/>
+          <polygon points="18,110 15,120 21,120" fill="#3a7050"/>
+          <polygon points="18,276 15,266 21,266" fill="#3a7050"/>
+          <text x="30" y="114" font-size="9" fill="#7a7670" font-family="Inter,sans-serif">Standing</text>
+          <text x="30" y="272" font-size="9" fill="#7a7670" font-family="Inter,sans-serif">Sitting</text>
+          <text x="0" y="200" font-size="8" fill="#3a7050" font-family="Inter,sans-serif" transform="rotate(-90,0,200)" opacity=".7">25.6″ range</text>
+          <rect x="88" y="50" width="64" height="44" rx="4" fill="#1e2830"/>
+          <rect x="91" y="53" width="58" height="38" rx="3" fill="#1c2a38"/>
+          <rect x="118" y="93" width="8" height="18" rx="1" fill="#1a1a1a"/>
+          <circle cx="196" cy="62" r="13" fill="#d4cec5"/>
+          <path d="M184 88 Q196 94 208 88 L210 120 Q196 122 182 120 Z" fill="#d4cec5"/>
+          <line x1="182" y1="94" x2="174" y2="114" stroke="#d4cec5" stroke-width="7" stroke-linecap="round"/>
+          <line x1="210" y1="94" x2="218" y2="114" stroke="#d4cec5" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="flogo">Vernal<span>.</span></div>
+    <p class="ftxt">© 2025 Vernal · 15-Year Frame Warranty · 30-Day Free Returns · Free Shipping<br>Questions? service-us@vernalspace.com · +1 213-429-4099 Mon–Fri 9am–5pm</p>
+  </div>
+</footer>
+
+<script>
+// ── VARIANT SELECTORS ──
+function selSize(b){
+  document.querySelectorAll('.vbtn').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-pressed','false')});
+  b.classList.add('on');b.setAttribute('aria-pressed','true');
+  var m=document.getElementById('stickyMeta');
+  if(m){var t=b.textContent.trim();m.textContent=t+' · Free shipping'}
+}
+function selColor(b){
+  document.querySelectorAll('.cbtn').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-pressed','false')});
+  b.classList.add('on');b.setAttribute('aria-pressed','true');
+}
+
+// ── STICKY BAR ──
+(function(){
+  var bar=document.getElementById('stickyBar');
+  var hero=document.getElementById('heroAddBtn');
+  if(!bar||!hero)return;
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){bar.classList.toggle('show',!e.isIntersecting)});
+  },{threshold:0});
+  obs.observe(hero);
+})();
+
+// ── SCROLL REVEAL ──
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
+  },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){obs.observe(el)});
+})();
+
+// ── FAQ ACCORDION ──
+function toggleFaq(btn){
+  var item=btn.closest('.faq-item');
+  var isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(el){
+    el.classList.remove('open');
+    el.querySelector('.faq-trigger').setAttribute('aria-expanded','false');
+  });
+  if(!isOpen){
+    item.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+  }
+}
+</script>
+</body>
+</html>
