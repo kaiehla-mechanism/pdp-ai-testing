@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vernal Standing Desk — Built to Stay Still</title>
+<meta name="description" content="Three-stage dual-motor standing desk with <0.001″ column tolerance. 30,000+ lift cycles tested. 15-year warranty. Free shipping & 30-day returns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Epilogue',system-ui,sans-serif;font-weight:300;background:#f7f4ef;color:#1a1714;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+
+:root{
+  --ink:#1a1714;
+  --ink2:#4c4840;
+  --ink3:#9c9890;
+  --cream:#f7f4ef;
+  --cream2:#ede9e1;
+  --cream3:#ddd8ce;
+  --forest:#2d5a3d;
+  --forest2:#1e3f2b;
+  --forest3:#3d7a54;
+  --forestl:#e8f0eb;
+  --gold:#b8943a;
+  --goldl:#fdf6e8;
+  --charcoal:#1a1714;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Epilogue',system-ui,sans-serif;
+  --r:6px;
+  --rlg:12px;
+}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 2rem}
+.wrap-narrow{max-width:900px;margin:0 auto;padding:0 2rem}
+section{position:relative}
+
+/* ── TOPBAR ── */
+.topbar{background:var(--charcoal);padding:.65rem 0;text-align:center}
+.topbar p{color:rgba(255,255,255,.6);font-size:12.5px;letter-spacing:.05em}
+.topbar strong{color:#d4b96a;font-weight:500}
+
+/* ── NAV ── */
+nav{background:var(--cream);border-bottom:1px solid var(--cream3);padding:1rem 0;position:sticky;top:0;z-index:200;backdrop-filter:blur(12px)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:1.5rem;font-weight:400;color:var(--ink);letter-spacing:-.01em;text-decoration:none}
+.logo-dot{color:var(--forest)}
+.nav-pills{display:flex;gap:.75rem;align-items:center}
+.nav-pill{font-size:12px;color:var(--ink2);padding:5px 12px;border:1px solid var(--cream3);border-radius:20px;letter-spacing:.03em}
+
+/* ── HERO ── */
+.hero{background:var(--cream);overflow:hidden;min-height:90vh;display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.hero-visual{background:var(--cream2);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:3rem 2.5rem}
+.hero-visual-inner{position:relative;width:100%;max-width:420px}
+
+/* desk SVG illustration */
+.desk-scene{width:100%;height:auto}
+
+.hero-badge{position:absolute;top:2rem;right:2rem;background:var(--charcoal);color:#fff;border-radius:50%;width:80px;height:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;line-height:1.3;text-align:center;letter-spacing:.04em}
+.hero-badge-num{font-family:var(--serif);font-size:1.3rem;font-weight:700;line-height:1;color:#d4b96a}
+.hero-badge-sub{font-size:9px;opacity:.6}
+.floating-tag{position:absolute;background:#fff;border-radius:var(--rlg);padding:.65rem 1rem;box-shadow:0 8px 32px rgba(0,0,0,.08);display:flex;align-items:center;gap:.5rem;font-size:12px;color:var(--ink2);white-space:nowrap}
+.floating-tag .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.tag1{bottom:3rem;left:1.5rem;animation:floatA 4s ease-in-out infinite}
+.tag2{top:3.5rem;left:2rem;animation:floatB 4s ease-in-out 1.2s infinite}
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+
+.hero-copy{padding:4.5rem 4rem 4rem 4.5rem;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);font-weight:500;margin-bottom:1rem}
+h1{font-family:var(--serif);font-size:clamp(2.4rem,3.8vw,3.3rem);font-weight:400;line-height:1.12;letter-spacing:-.02em;color:var(--ink);margin-bottom:1.4rem}
+h1 em{font-style:italic;color:var(--forest)}
+.hero-desc{font-size:1.05rem;color:var(--ink2);line-height:1.72;margin-bottom:1.8rem;max-width:400px}
+.stars-line{display:flex;align-items:center;gap:.75rem;margin-bottom:1.6rem}
+.stars{display:flex;gap:2px}
+.star{width:13px;height:13px;background:#c9963a;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.rcount{font-size:13px;color:var(--ink2)}
+.price-row-hero{display:flex;align-items:baseline;gap:.85rem;margin-bottom:.4rem}
+.price-was{font-size:14px;color:var(--ink3);text-decoration:line-through}
+.price-now{font-family:var(--serif);font-size:2.5rem;font-weight:700;letter-spacing:-.03em;color:var(--ink)}
+.price-save{background:var(--goldl);color:var(--gold);font-size:12px;font-weight:500;padding:4px 10px;border-radius:20px}
+.price-note{font-size:12.5px;color:var(--ink3);margin-bottom:1.6rem}
+
+.variants{margin-bottom:1.8rem;display:flex;flex-direction:column;gap:1rem}
+.vlabel{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:500;margin-bottom:.5rem}
+.vgrid{display:flex;gap:.5rem;flex-wrap:wrap}
+.vbtn{padding:.5rem 1rem;border:1.5px solid var(--cream3);border-radius:var(--r);background:var(--cream);font-family:var(--sans);font-size:13px;color:var(--ink2);cursor:pointer;transition:all .15s}
+.vbtn:hover,.vbtn.on{border-color:var(--forest);background:var(--forestl);color:var(--forest2);font-weight:500}
+.cbtn{display:flex;align-items:center;gap:7px;padding:.45rem .9rem;border:1.5px solid var(--cream3);border-radius:var(--r);background:var(--cream);font-family:var(--sans);font-size:13px;color:var(--ink2);cursor:pointer;transition:all .15s}
+.cbtn:hover,.cbtn.on{border-color:var(--forest);background:var(--forestl);color:var(--forest2)}
+.cdot{width:11px;height:11px;border-radius:50%}
+
+.cta-stack{display:flex;flex-direction:column;gap:.65rem;margin-bottom:1.4rem}
+.btn-add{width:100%;padding:1rem 1.5rem;background:var(--forest);color:#fff;border:none;border-radius:var(--r);font-family:var(--sans);font-size:1rem;font-weight:500;cursor:pointer;transition:background .15s;letter-spacing:.01em}
+.btn-add:hover{background:var(--forest2)}
+.btn-wl{width:100%;padding:.9rem 1.5rem;background:transparent;color:var(--ink);border:1.5px solid var(--cream3);border-radius:var(--r);font-family:var(--sans);font-size:1rem;cursor:pointer;transition:all .15s}
+.btn-wl:hover{border-color:var(--ink)}
+.micro-trust{display:flex;gap:1.25rem;font-size:12px;color:var(--ink3)}
+.mt-item{display:flex;align-items:center;gap:5px}
+
+/* ── MARQUEE BAR ── */
+.marquee-bar{background:var(--forest);padding:.9rem 0;overflow:hidden}
+.marquee-track{display:flex;gap:3rem;animation:scroll 28s linear infinite;white-space:nowrap}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-item{font-size:12.5px;color:rgba(255,255,255,.65);letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+.marquee-item::before{content:'';width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.35)}
+
+/* ── SECTION SHARED ── */
+.sec{padding:6rem 0}
+.sec-dark{background:var(--charcoal);padding:6rem 0}
+.sec-cream2{background:var(--cream2);padding:6rem 0}
+.stitle{font-family:var(--serif);font-size:clamp(2rem,3.2vw,2.8rem);font-weight:400;line-height:1.18;letter-spacing:-.02em;color:var(--ink);max-width:640px;margin-bottom:1rem}
+.stitle em{font-style:italic;color:var(--forest)}
+.ssub{font-size:1rem;color:var(--ink2);line-height:1.7;max-width:520px;margin-bottom:3rem}
+.stitle-light{color:#fff}
+.stitle-light em{color:#a8d0b5}
+.ssub-light{color:rgba(255,255,255,.45)}
+
+/* ── ANATOMY SECTION ── */
+.anatomy-wrap{display:grid;grid-template-columns:5fr 7fr;gap:5rem;align-items:center}
+.anatomy-svg-wrap{position:relative}
+.anatomy-callouts{display:flex;flex-direction:column;gap:1.5rem}
+.callout{display:flex;gap:1.1rem;align-items:flex-start}
+.callout-num{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--cream3);line-height:1;flex-shrink:0;width:2rem}
+.callout-body strong{display:block;font-size:14.5px;font-weight:500;color:var(--ink);margin-bottom:3px}
+.callout-body span{font-size:13.5px;color:var(--ink3);line-height:1.55}
+
+/* ── PROOF NUMBERS ── */
+.proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--cream3);border:1px solid var(--cream3);border-radius:var(--rlg);overflow:hidden;margin-top:3rem}
+.proof-cell{background:var(--cream);padding:2.25rem 2rem}
+.proof-num{font-family:var(--serif);font-size:2.8rem;font-weight:700;letter-spacing:-.03em;color:var(--forest);line-height:1;margin-bottom:.4rem}
+.proof-label{font-size:13px;color:var(--ink2);font-weight:500;margin-bottom:.3rem}
+.proof-desc{font-size:12.5px;color:var(--ink3);line-height:1.5}
+
+/* ── PROCESS / STEPS ── */
+.steps-track{display:grid;grid-template-columns:repeat(3,1fr);position:relative;margin-top:3rem}
+.steps-track::before{content:'';position:absolute;top:2rem;left:calc(100%/6);right:calc(100%/6);height:1px;background:var(--cream3);z-index:0}
+.step{padding:1.5rem 2rem 2rem;position:relative;z-index:1}
+.step-icon{width:40px;height:40px;border-radius:50%;background:var(--cream2);border:1px solid var(--cream3);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
+.step-n{font-family:var(--serif);font-size:.8rem;font-weight:700;color:var(--ink3)}
+.step-title{font-size:15px;font-weight:500;color:var(--ink);margin-bottom:.5rem}
+.step-desc{font-size:13.5px;color:var(--ink3);line-height:1.6}
+
+/* ── REVIEWS ── */
+.reviews-intro{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem}
+.big-score{font-family:var(--serif);font-size:4rem;font-weight:700;letter-spacing:-.04em;color:var(--ink);line-height:1}
+.score-sub{font-size:13px;color:var(--ink3);margin-top:.25rem}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.tcard{background:var(--cream2);border-radius:var(--rlg);padding:1.75rem;display:flex;flex-direction:column}
+.t-stars{display:flex;gap:3px;margin-bottom:.9rem}
+.t-q{font-family:var(--serif);font-size:1rem;font-style:italic;font-weight:400;line-height:1.6;color:var(--ink);flex:1;margin-bottom:1rem}
+.t-result-tag{font-size:11.5px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--forest);margin-bottom:.85rem;padding-bottom:.85rem;border-bottom:1px solid var(--cream3)}
+.t-who{display:flex;align-items:center;gap:.65rem}
+.t-av{width:32px;height:32px;border-radius:50%;background:var(--forestl);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:var(--forest2);flex-shrink:0}
+.t-nm{font-size:13.5px;font-weight:500;color:var(--ink)}
+.t-mt{font-size:12px;color:var(--ink3)}
+
+/* ── VISUAL PROOF BAR ── */
+.vproof-bar{background:var(--cream2);border-radius:var(--rlg);padding:1.75rem 2rem;margin-top:2rem;display:grid;grid-template-columns:auto 1fr auto;gap:2.5rem;align-items:center}
+.vproof-score-wrap{text-align:center}
+.vproof-score{font-family:var(--serif);font-size:2.8rem;font-weight:700;color:var(--ink);line-height:1;letter-spacing:-.03em}
+.vproof-stars{display:flex;gap:3px;justify-content:center;margin:.3rem 0}
+.vproof-n{font-size:12px;color:var(--ink3)}
+.vproof-bars{display:flex;flex-direction:column;gap:6px}
+.vproof-row{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--ink3)}
+.vproof-track{flex:1;height:5px;background:var(--cream3);border-radius:10px;overflow:hidden}
+.vproof-fill{height:100%;background:#c9963a;border-radius:10px}
+.vproof-tags-wrap{display:flex;flex-direction:column;gap:.5rem}
+.vtag{background:var(--forestl);color:var(--forest2);padding:5px 12px;border-radius:20px;font-size:12px;font-weight:500;text-align:center}
+
+/* ── TECHNICAL SPECS ACCORDION ── */
+.specs-section{background:var(--cream)}
+.specs-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--cream3);border:1px solid var(--cream3);border-radius:var(--rlg);overflow:hidden;margin-top:2.5rem}
+.spec-item{background:var(--cream);padding:1.4rem 1.75rem;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:1rem}
+.spec-key{font-size:13px;color:var(--ink3)}
+.spec-val{font-size:14px;font-weight:500;color:var(--ink);text-align:right}
+
+/* ── LIFESTYLE / CONTEXT EDITORIAL ── */
+.editorial{display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden;border-radius:var(--rlg)}
+.ed-panel{padding:4rem}
+.ed-panel-dark{background:var(--charcoal);padding:4rem}
+.ed-quote{font-family:var(--serif);font-size:1.6rem;font-weight:400;font-style:italic;line-height:1.45;color:#fff;margin-bottom:1.5rem}
+.ed-attr{font-size:13px;color:rgba(255,255,255,.4)}
+.ed-visual{background:var(--cream2);display:flex;align-items:center;justify-content:center;min-height:340px}
+
+/* ── COMPARISON ── */
+.ctable{width:100%;border-collapse:separate;border-spacing:0;border-radius:var(--rlg);overflow:hidden;border:1px solid var(--cream3)}
+.ctable th{padding:1rem 1.5rem;font-size:12px;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+.ctable th.h-blank{background:var(--cream);text-align:left;color:var(--ink3)}
+.ctable th.h-us{background:var(--forest);color:#fff;text-align:center}
+.ctable th.h-them{background:var(--cream2);color:var(--ink3);text-align:center}
+.ctable td{padding:1rem 1.5rem;font-size:13.5px;border-top:1px solid var(--cream3)}
+.ctable td.c-label{color:var(--ink2);background:var(--cream)}
+.ctable td.c-us{background:var(--forestl);text-align:center;color:var(--forest2);font-weight:500}
+.ctable td.c-them{text-align:center;color:var(--ink3);background:var(--cream)}
+.chk{color:var(--forest)}
+.crs{opacity:.3}
+
+/* ── OBJECTION HANDLER ── */
+.obj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:2.5rem}
+.obj-card{background:var(--cream2);border-radius:var(--rlg);padding:1.75rem;display:grid;grid-template-rows:auto 1fr auto;gap:.75rem}
+.obj-q{font-size:14.5px;font-weight:500;color:var(--ink);line-height:1.4}
+.obj-a{font-size:13.5px;color:var(--ink3);line-height:1.65}
+.obj-tag{display:inline-block;background:var(--forestl);color:var(--forest);font-size:11.5px;font-weight:500;padding:4px 10px;border-radius:20px;letter-spacing:.03em}
+
+/* ── SUSTAINABILITY ── */
+.sustain-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.sustain-pills{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:2rem}
+.spill{background:rgba(255,255,255,.07);color:rgba(255,255,255,.65);border:1px solid rgba(255,255,255,.12);padding:.45rem 1rem;border-radius:20px;font-size:13px}
+.sustain-visual{position:relative}
+.sustain-ring{display:flex;align-items:center;justify-content:center}
+
+/* ── IRRESPONSIBILITY THRESHOLD / OFFER ── */
+.offer-block{background:var(--forest2);border-radius:var(--rlg);padding:3rem;margin-top:3rem;position:relative;overflow:hidden}
+.offer-block::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.03)}
+.offer-block::after{content:'';position:absolute;bottom:-60px;left:-20px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.025)}
+.offer-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
+.offer-copy .offer-badge{display:inline-block;background:var(--gold);color:#fff;font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:1rem}
+.offer-title{font-family:var(--serif);font-size:1.9rem;font-weight:400;font-style:italic;color:#fff;line-height:1.3;margin-bottom:.75rem}
+.offer-desc{font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.65;max-width:460px}
+.offer-cta-side{display:flex;flex-direction:column;align-items:center;gap:.75rem;flex-shrink:0}
+.offer-price-wrap{text-align:center;background:rgba(255,255,255,.07);border-radius:var(--rlg);padding:1.5rem 2rem;border:1px solid rgba(255,255,255,.1)}
+.offer-was{font-size:13px;color:rgba(255,255,255,.4);text-decoration:line-through}
+.offer-price{font-family:var(--serif);font-size:2.5rem;font-weight:700;color:#fff;letter-spacing:-.03em;line-height:1}
+.offer-note{font-size:11.5px;color:rgba(255,255,255,.4);margin-top:.3rem}
+.btn-offer{width:100%;padding:1rem 2rem;background:#fff;color:var(--forest2);border:none;border-radius:var(--r);font-family:var(--sans);font-size:1rem;font-weight:500;cursor:pointer;white-space:nowrap;transition:opacity .15s}
+.btn-offer:hover{opacity:.92}
+.offer-guar{display:flex;gap:.5rem;align-items:center;font-size:12px;color:rgba(255,255,255,.35)}
+
+/* ── VALUE STACK ── */
+.vstack{background:var(--cream);border:1px solid var(--cream3);border-radius:var(--rlg);overflow:hidden}
+.vstack-header{background:var(--cream2);padding:1rem 1.5rem;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:500}
+.vstack-row{display:flex;justify-content:space-between;align-items:center;padding:.85rem 1.5rem;border-top:1px solid var(--cream3);font-size:13.5px}
+.vstack-name{color:var(--ink2)}
+.vstack-price{font-weight:500;color:var(--ink)}
+.vstack-price.green{color:var(--forest)}
+.vstack-total{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;border-top:1.5px solid var(--cream3)}
+.vstack-total-label{font-size:13px;font-weight:500;color:var(--ink)}
+.vstack-total-price{font-family:var(--serif);font-size:1.8rem;font-weight:700;color:var(--forest);letter-spacing:-.02em}
+
+/* ── FINAL CTA ── */
+.final-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.final-title{font-family:var(--serif);font-size:clamp(2.2rem,3.5vw,3rem);font-weight:400;line-height:1.15;letter-spacing:-.02em;color:var(--ink);margin-bottom:1.25rem}
+.final-title em{font-style:italic;color:var(--forest)}
+.final-sub{font-size:1rem;color:var(--ink2);line-height:1.7;margin-bottom:2rem}
+.final-guar{display:flex;gap:1.25rem;margin-top:1.1rem;flex-wrap:wrap}
+.fg-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink3)}
+
+/* ── FOOTER ── */
+footer{background:var(--charcoal);padding:2.5rem 0;text-align:center}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:rgba(255,255,255,.5);margin-bottom:.5rem}
+.flogo span{color:#c9963a}
+.ftxt{font-size:12.5px;color:rgba(255,255,255,.25)}
+
+/* ── ANIMATIONS ON SCROLL ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal-delay-1{transition-delay:.1s}
+.reveal-delay-2{transition-delay:.22s}
+.reveal-delay-3{transition-delay:.34s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-visual{min-height:360px;order:-1}
+  .hero-copy{padding:2.5rem 2rem 3rem}
+  .anatomy-wrap,.sustain-layout,.final-layout,.editorial{grid-template-columns:1fr}
+  .proof-grid{grid-template-columns:1fr 1fr}
+  .tgrid{grid-template-columns:1fr}
+  .obj-grid{grid-template-columns:1fr}
+  .steps-track{grid-template-columns:1fr}
+  .steps-track::before{display:none}
+  .offer-inner{grid-template-columns:1fr}
+  .vproof-bar{grid-template-columns:1fr;text-align:center}
+  .nav-pills{display:none}
+  .ed-panel-dark,.ed-panel{padding:2.5rem 2rem}
+  .specs-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .wrap,.wrap-narrow{padding:0 1.25rem}
+  .sec,.sec-dark,.sec-cream2{padding:4rem 0}
+  .proof-grid{grid-template-columns:1fr}
+  .offer-price{font-size:2rem}
+}
+
+/* ── STICKY BAR ── */
+.sticky-bar{
+  position:fixed;
+  bottom:0;left:0;right:0;
+  z-index:300;
+  background:var(--charcoal);
+  border-top:1px solid rgba(255,255,255,.08);
+  padding:.9rem 0;
+  transform:translateY(100%);
+  transition:transform .35s cubic-bezier(.4,0,.2,1);
+  box-shadow:0 -8px 32px rgba(0,0,0,.18);
+}
+.sticky-bar.visible{transform:translateY(0)}
+.sticky-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.5rem;
+}
+.sticky-product{display:flex;align-items:center;gap:1rem}
+.sticky-thumb{
+  width:40px;height:40px;
+  background:var(--cream2);
+  border-radius:var(--r);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.sticky-name{font-size:13.5px;font-weight:500;color:#fff;line-height:1.3}
+.sticky-sub{font-size:12px;color:rgba(255,255,255,.4)}
+.sticky-trust{display:flex;align-items:center;gap:1.25rem;flex-shrink:0}
+.sticky-trust-item{display:flex;align-items:center;gap:5px;font-size:12px;color:rgba(255,255,255,.45)}
+.sticky-price-cta{display:flex;align-items:center;gap:1rem;flex-shrink:0}
+.sticky-price{text-align:right}
+.sticky-price-was{font-size:11.5px;color:rgba(255,255,255,.3);text-decoration:line-through}
+.sticky-price-now{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:#fff;letter-spacing:-.02em;line-height:1}
+.btn-sticky{
+  padding:.7rem 1.75rem;
+  background:var(--forest3);
+  color:#fff;border:none;
+  border-radius:var(--r);
+  font-family:var(--sans);
+  font-size:.9rem;font-weight:500;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:background .15s;
+}
+.btn-sticky:hover{background:var(--forest)}
+@media(max-width:768px){
+  .sticky-trust{display:none}
+  .sticky-name{font-size:12.5px}
+}
+@media(max-width:480px){
+  .sticky-product{display:none}
+  .sticky-price-cta{width:100%;justify-content:space-between}
+  .btn-sticky{flex:1;text-align:center}
+}
+
+/* ── FAQ ── */
+.faq-section{background:var(--cream);padding:6rem 0}
+.faq-layout{display:grid;grid-template-columns:5fr 7fr;gap:5rem;align-items:start}
+.faq-intro{position:sticky;top:6rem}
+.faq-intro .stitle{margin-bottom:1.25rem}
+.faq-intro p{font-size:1rem;color:var(--ink2);line-height:1.7;margin-bottom:2rem}
+.faq-cta-inline{
+  display:inline-flex;align-items:center;gap:.6rem;
+  background:var(--forest);color:#fff;
+  padding:.8rem 1.5rem;border-radius:var(--r);
+  font-family:var(--sans);font-size:.9rem;font-weight:500;
+  cursor:pointer;border:none;transition:background .15s;
+}
+.faq-cta-inline:hover{background:var(--forest2)}
+.faq-list{display:flex;flex-direction:column;gap:.5rem}
+.faq-item{
+  border:1px solid var(--cream3);
+  border-radius:var(--rlg);
+  overflow:hidden;
+  background:var(--cream);
+  transition:border-color .2s;
+}
+.faq-item.open{border-color:var(--forest3)}
+.faq-trigger{
+  width:100%;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.25rem 1.5rem;
+  background:none;border:none;
+  font-family:var(--sans);font-size:14.5px;font-weight:500;
+  color:var(--ink);text-align:left;cursor:pointer;
+  gap:1rem;
+  transition:color .15s;
+}
+.faq-trigger:hover{color:var(--forest)}
+.faq-item.open .faq-trigger{color:var(--forest)}
+.faq-icon{
+  width:24px;height:24px;flex-shrink:0;
+  border-radius:50%;border:1.5px solid var(--cream3);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .25s;
+  background:var(--cream2);
+}
+.faq-item.open .faq-icon{
+  background:var(--forest);
+  border-color:var(--forest);
+  transform:rotate(45deg);
+}
+.faq-icon svg{transition:stroke .25s}
+.faq-item.open .faq-icon svg{stroke:#fff}
+.faq-body{
+  max-height:0;overflow:hidden;
+  transition:max-height .35s cubic-bezier(.4,0,.2,1), padding .35s;
+  padding:0 1.5rem;
+}
+.faq-item.open .faq-body{
+  max-height:400px;
+  padding-bottom:1.4rem;
+}
+.faq-body p{font-size:13.5px;color:var(--ink2);line-height:1.72}
+.faq-body p+p{margin-top:.75rem}
+.faq-tag{
+  display:inline-block;
+  background:var(--forestl);color:var(--forest);
+  font-size:11.5px;font-weight:500;
+  padding:3px 10px;border-radius:20px;
+  margin-top:.85rem;letter-spacing:.03em;
+}
+@media(max-width:900px){
+  .faq-layout{grid-template-columns:1fr}
+  .faq-intro{position:static}
+  .faq-section{padding:4rem 0}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <p>Free shipping on every order &nbsp;·&nbsp; <strong>30-day returns, no questions asked</strong> &nbsp;·&nbsp; 15-year frame warranty</p>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="#">Vernal<span class="logo-dot">.</span></a>
+    <div class="nav-pills">
+      <span class="nav-pill">⭑ 4.8 / 2,400+ reviews</span>
+      <span class="nav-pill">15-yr warranty</span>
+      <span class="nav-pill">Free shipping</span>
+    </div>
+  </div>
+</nav>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="stickyBar" role="region" aria-label="Quick add to cart">
+  <div class="wrap sticky-inner">
+    <div class="sticky-product">
+      <div class="sticky-thumb">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <rect x="3" y="11" width="20" height="2" rx="1" fill="#2d5a3d"/>
+          <rect x="7" y="13" width="2" height="9" rx="1" fill="#3a3a3a"/>
+          <rect x="17" y="13" width="2" height="9" rx="1" fill="#3a3a3a"/>
+          <rect x="5" y="21" width="6" height="1.5" rx=".75" fill="#222"/>
+          <rect x="15" y="21" width="6" height="1.5" rx=".75" fill="#222"/>
+          <rect x="7" y="8" width="12" height="1.5" rx=".75" fill="#1e1e1e"/>
+        </svg>
+      </div>
+      <div>
+        <div class="sticky-name">Vernal Height-Adjustable Desk</div>
+        <div class="sticky-sub">48&Prime; White &middot; Free shipping &middot; In stock</div>
+      </div>
+    </div>
+    <div class="sticky-trust">
+      <div class="sticky-trust-item">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3 3L11 3" stroke="#3d7a54" stroke-width="1.4" stroke-linecap="round"/></svg>
+        30-day returns
+      </div>
+      <div class="sticky-trust-item">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3 3L11 3" stroke="#3d7a54" stroke-width="1.4" stroke-linecap="round"/></svg>
+        15-yr warranty
+      </div>
+      <div class="sticky-trust-item">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1l1.8 3.6 4 .6-2.9 2.8.7 4L6.5 10l-3.6 1.9.7-4L.7 5.2l4-.6z" fill="#c9963a"/></svg>
+        4.8 / 2,400+ reviews
+      </div>
+    </div>
+    <div class="sticky-price-cta">
+      <div class="sticky-price">
+        <div class="sticky-price-was">$599</div>
+        <div class="sticky-price-now">$459</div>
+      </div>
+      <button class="btn-sticky" onclick="document.querySelector('.btn-add').click()">Add to cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section data-section="hero" data-section-type="pdp-hero">
+  <div class="hero">
+
+    <!-- Visual side -->
+    <div class="hero-visual">
+      <div class="hero-visual-inner">
+        <!-- Desk SVG Illustration -->
+        <svg class="desk-scene" viewBox="0 0 440 520" xmlns="http://www.w3.org/2000/svg" aria-label="Vernal standing desk illustration">
+          <defs>
+            <linearGradient id="deskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ede9e1"/>
+              <stop offset="100%" stop-color="#ddd8ce"/>
+            </linearGradient>
+            <linearGradient id="legGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#3d3d3d"/>
+              <stop offset="100%" stop-color="#2a2a2a"/>
+            </linearGradient>
+            <linearGradient id="topGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e8e3da"/>
+              <stop offset="100%" stop-color="#d4cec3"/>
+            </linearGradient>
+            <linearGradient id="monGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#1e2830"/>
+              <stop offset="100%" stop-color="#141b22"/>
+            </linearGradient>
+            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="rgba(0,0,0,0.12)"/>
+            </filter>
+          </defs>
+
+          <!-- Floor shadow -->
+          <ellipse cx="220" cy="510" rx="160" ry="12" fill="rgba(0,0,0,0.07)"/>
+
+          <!-- Left leg assembly — outer tube -->
+          <rect x="82" y="210" width="28" height="220" rx="4" fill="url(#legGrad)"/>
+          <!-- Left leg inner section (telescoping) -->
+          <rect x="86" y="310" width="20" height="130" rx="3" fill="#262626"/>
+          <!-- Left leg foot -->
+          <rect x="76" y="424" width="40" height="10" rx="3" fill="#1a1a1a"/>
+          <rect x="68" y="430" width="56" height="6" rx="3" fill="#111"/>
+
+          <!-- Right leg assembly -->
+          <rect x="330" y="210" width="28" height="220" rx="4" fill="url(#legGrad)"/>
+          <rect x="334" y="310" width="20" height="130" rx="3" fill="#262626"/>
+          <rect x="324" y="424" width="40" height="10" rx="3" fill="#1a1a1a"/>
+          <rect x="316" y="430" width="56" height="6" rx="3" fill="#111"/>
+
+          <!-- Crossbar / T-frame -->
+          <rect x="82" y="360" width="276" height="16" rx="4" fill="#1e1e1e"/>
+          <!-- Cable tray on crossbar -->
+          <rect x="100" y="356" width="240" height="8" rx="2" fill="#1a1a1a" opacity=".6"/>
+
+          <!-- Desktop surface -->
+          <rect x="52" y="190" width="336" height="28" rx="6" fill="url(#topGrad)" filter="url(#shadow)"/>
+          <!-- Desktop top face (walnut-like grain suggestion) -->
+          <rect x="52" y="190" width="336" height="22" rx="6" fill="#ddd8ce"/>
+          <line x1="80" y1="192" x2="80" y2="210" stroke="#ccc8be" stroke-width="0.5" opacity=".5"/>
+          <line x1="140" y1="192" x2="140" y2="210" stroke="#ccc8be" stroke-width="0.5" opacity=".5"/>
+          <line x1="200" y1="192" x2="200" y2="210" stroke="#ccc8be" stroke-width="0.5" opacity=".5"/>
+          <line x1="260" y1="192" x2="260" y2="210" stroke="#ccc8be" stroke-width="0.5" opacity=".5"/>
+          <line x1="320" y1="192" x2="320" y2="210" stroke="#ccc8be" stroke-width="0.5" opacity=".5"/>
+          <!-- Desktop front edge -->
+          <rect x="52" y="210" width="336" height="8" rx="2" fill="#cac4b8"/>
+
+          <!-- Monitor arm -->
+          <rect x="207" y="148" width="6" height="44" rx="2" fill="#2a2a2a"/>
+          <rect x="196" y="145" width="28" height="6" rx="2" fill="#222"/>
+
+          <!-- Monitor -->
+          <rect x="138" y="68" width="164" height="106" rx="6" fill="url(#monGrad)" filter="url(#shadow)"/>
+          <!-- Monitor screen glow -->
+          <rect x="142" y="72" width="156" height="98" rx="4" fill="#1e2d3d"/>
+          <!-- Screen content suggestion -->
+          <rect x="148" y="78" width="90" height="6" rx="2" fill="rgba(255,255,255,0.15)"/>
+          <rect x="148" y="90" width="60" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+          <rect x="148" y="100" width="140" height="58" rx="3" fill="rgba(255,255,255,0.04)"/>
+          <!-- Monitor stand base -->
+          <rect x="208" y="172" width="24" height="6" rx="2" fill="#1e1e1e"/>
+          <rect x="200" y="177" width="40" height="4" rx="2" fill="#1a1a1a"/>
+
+          <!-- Keyboard on desk -->
+          <rect x="122" y="194" width="130" height="10" rx="3" fill="#c4bfb4" opacity=".7"/>
+          <rect x="128" y="195" width="118" height="7" rx="2" fill="#bfb9ae" opacity=".5"/>
+
+          <!-- Control panel (handset) -->
+          <rect x="332" y="194" width="42" height="10" rx="3" fill="#2a2a2a"/>
+          <circle cx="338" cy="199" r="2.5" fill="#3d7a54" opacity=".9"/>
+          <circle cx="346" cy="199" r="2.5" fill="#444"/>
+          <circle cx="354" cy="199" r="2.5" fill="#444"/>
+          <circle cx="362" cy="199" r="2.5" fill="#444"/>
+
+          <!-- Cable management tray (hanging) -->
+          <rect x="120" y="370" width="200" height="12" rx="3" fill="#1a1a1a" opacity=".5"/>
+
+          <!-- Precision gap indicator lines with annotation -->
+          <line x1="82" y1="300" x2="60" y2="260" stroke="#3d7a54" stroke-width="1" stroke-dasharray="3,3" opacity=".6"/>
+          <circle cx="82" cy="300" r="3" fill="#3d7a54" opacity=".7"/>
+          <!-- Gap text removed — let floating tags handle it -->
+
+          <!-- Height arrow indicator -->
+          <line x1="30" y1="202" x2="30" y2="436" stroke="#3d7a54" stroke-width="1" stroke-dasharray="4,4" opacity=".4"/>
+          <polygon points="30,196 27,206 33,206" fill="#3d7a54" opacity=".5"/>
+          <polygon points="30,442 27,432 33,432" fill="#3d7a54" opacity=".5"/>
+          <text x="8" y="325" font-size="9" fill="#3d7a54" font-family="Epilogue,sans-serif" opacity=".7" transform="rotate(-90,8,325)">25.6″ – 50.4″</text>
+        </svg>
+
+        <!-- Floating tags -->
+        <div class="floating-tag tag1">
+          <span class="dot" style="background:#3d7a54"></span>
+          &lt;0.001″ column gap
+        </div>
+        <div class="floating-tag tag2">
+          <span class="dot" style="background:#c9963a"></span>
+          30,000+ lift cycles
+        </div>
+      </div>
+
+      <!-- Award badge -->
+      <div class="hero-badge">
+        <span class="hero-badge-num">15</span>
+        <span>yr</span>
+        <span class="hero-badge-sub">warranty</span>
+      </div>
+    </div>
+
+    <!-- Copy side -->
+    <div class="hero-copy">
+      <p class="eyebrow" data-setting="eyebrow">Height-Adjustable Standing Desk</p>
+      <h1 data-setting="h1">The desk that stays <em>perfectly still</em> while you work.</h1>
+      <p class="hero-desc" data-setting="desc">Three-stage dual-motor legs with &lt;0.001″ column tolerance. If your screen vibrates when you type, that's an engineering failure — not a feature of standing desks.</p>
+
+      <div class="stars-line">
+        <div class="stars">
+          <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        </div>
+        <span class="rcount" data-setting="review_count">4.8 &nbsp;·&nbsp; 2,400+ verified reviews</span>
+      </div>
+
+      <div style="margin-bottom:1.4rem">
+        <div class="price-row-hero">
+          <span class="price-was" data-setting="price_was">$599</span>
+          <span class="price-now" data-setting="price_now">$459</span>
+          <span class="price-save" data-setting="price_save">Save $140</span>
+        </div>
+        <p class="price-note">Free shipping · Arrives in 5–8 business days</p>
+      </div>
+
+      <div class="variants">
+        <div>
+          <p class="vlabel">Desk size</p>
+          <div class="vgrid">
+            <button class="vbtn" onclick="selSize(this)">40″ × 30″</button>
+            <button class="vbtn on" onclick="selSize(this)">48″ × 30″</button>
+            <button class="vbtn" onclick="selSize(this)">60″ × 30″</button>
+          </div>
+        </div>
+        <div>
+          <p class="vlabel">Finish</p>
+          <div class="vgrid">
+            <button class="cbtn on" onclick="selColor(this)"><span class="cdot" style="background:#f0ece4;border:1px solid #ccc"></span>White</button>
+            <button class="cbtn" onclick="selColor(this)"><span class="cdot" style="background:#7a5a38"></span>Walnut</button>
+            <button class="cbtn" onclick="selColor(this)"><span class="cdot" style="background:#baa882"></span>Light Walnut</button>
+            <button class="cbtn" onclick="selColor(this)"><span class="cdot" style="background:#cbbf9a"></span>Bamboo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-stack">
+        <button class="btn-add" data-setting="cta">Add to cart — $459</button>
+        <button class="btn-wl">Save to wishlist</button>
+      </div>
+
+      <div class="micro-trust">
+        <span class="mt-item">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3 3L11 3" stroke="#3d7a54" stroke-width="1.4" stroke-linecap="round"/></svg>
+          30-day free returns
+        </span>
+        <span class="mt-item">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3 3L11 3" stroke="#3d7a54" stroke-width="1.4" stroke-linecap="round"/></svg>
+          Ships free
+        </span>
+        <span class="mt-item">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3 3L11 3" stroke="#3d7a54" stroke-width="1.4" stroke-linecap="round"/></svg>
+          No-wobble guarantee
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">15-year frame warranty</span>
+    <span class="marquee-item">30-day free returns</span>
+    <span class="marquee-item">30,000 lift cycles tested</span>
+    <span class="marquee-item">Third-party stability certified</span>
+    <span class="marquee-item">Free shipping on all orders</span>
+    <span class="marquee-item">&lt;48dB motor noise</span>
+    <span class="marquee-item">397 lbs verified load capacity</span>
+    <span class="marquee-item">4-preset digital handset</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">15-year frame warranty</span>
+    <span class="marquee-item">30-day free returns</span>
+    <span class="marquee-item">30,000 lift cycles tested</span>
+    <span class="marquee-item">Third-party stability certified</span>
+    <span class="marquee-item">Free shipping on all orders</span>
+    <span class="marquee-item">&lt;48dB motor noise</span>
+    <span class="marquee-item">397 lbs verified load capacity</span>
+    <span class="marquee-item">4-preset digital handset</span>
+  </div>
+</div>
+
+<!-- ANATOMY SECTION — engineering explainer with SVG callouts -->
+<section data-section="anatomy" data-section-type="pdp-anatomy" class="sec">
+  <div class="wrap">
+    <div class="anatomy-wrap">
+      <div class="anatomy-svg-wrap reveal">
+        <!-- Exploded leg diagram -->
+        <svg viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;margin:0 auto">
+          <defs>
+            <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#3d3d3d"/>
+              <stop offset="100%" stop-color="#2a2a2a"/>
+            </linearGradient>
+            <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#2d2d2d"/>
+              <stop offset="100%" stop-color="#1e1e1e"/>
+            </linearGradient>
+            <linearGradient id="lg3" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#222"/>
+              <stop offset="100%" stop-color="#151515"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Stage 3 (outer, top) -->
+          <rect x="90" y="20" width="70" height="100" rx="6" fill="url(#lg1)"/>
+          <rect x="94" y="24" width="62" height="92" rx="4" fill="#3a3a3a" opacity=".3"/>
+          <text x="167" y="55" font-size="9" fill="#3d7a54" font-family="Epilogue,sans-serif">Stage 3</text>
+          <line x1="162" y1="52" x2="162" y2="70" stroke="#3d7a54" stroke-width=".8" stroke-dasharray="3,2" opacity=".7"/>
+
+          <!-- Callout: three-stage -->
+          <circle cx="162" cy="72" r="3" fill="#3d7a54" opacity=".7"/>
+
+          <!-- Stage 2 (middle) -->
+          <rect x="96" y="116" width="58" height="110" rx="5" fill="url(#lg2)"/>
+          <text x="163" y="160" font-size="9" fill="#9c9890" font-family="Epilogue,sans-serif">Stage 2</text>
+          <line x1="158" y1="158" x2="158" y2="172" stroke="#9c9890" stroke-width=".8" stroke-dasharray="3,2" opacity=".5"/>
+          <circle cx="158" cy="174" r="2.5" fill="#9c9890" opacity=".5"/>
+
+          <!-- Gap indicator between stage 2 and 3 -->
+          <line x1="76" y1="116" x2="50" y2="100" stroke="#c9963a" stroke-width=".8" stroke-dasharray="3,2" opacity=".8"/>
+          <circle cx="76" cy="116" r="2.5" fill="#c9963a" opacity=".8"/>
+          <text x="6" y="98" font-size="8" fill="#c9963a" font-family="Epilogue,sans-serif">&lt;0.001″</text>
+          <text x="6" y="108" font-size="8" fill="#c9963a" font-family="Epilogue,sans-serif">gap</text>
+
+          <!-- Stage 1 (inner, bottom) -->
+          <rect x="103" y="222" width="44" height="100" rx="4" fill="url(#lg3)"/>
+          <text x="156" y="265" font-size="9" fill="#9c9890" font-family="Epilogue,sans-serif">Stage 1</text>
+          <line x1="151" y1="263" x2="151" y2="275" stroke="#9c9890" stroke-width=".8" stroke-dasharray="3,2" opacity=".5"/>
+          <circle cx="151" cy="277" r="2.5" fill="#9c9890" opacity=".5"/>
+
+          <!-- Motor housing -->
+          <rect x="88" y="318" width="74" height="30" rx="5" fill="#1a1a1a"/>
+          <rect x="108" y="324" width="34" height="12" rx="2" fill="#222"/>
+          <circle cx="200" cy="333" r="0" fill="none"/>
+          <text x="170" y="337" font-size="9" fill="#3d7a54" font-family="Epilogue,sans-serif">Dual motor</text>
+          <line x1="165" y1="335" x2="163" y2="333" stroke="#3d7a54" stroke-width=".8" opacity=".7"/>
+
+          <!-- Foot -->
+          <rect x="80" y="346" width="90" height="14" rx="4" fill="#111"/>
+          <rect x="72" y="356" width="106" height="8" rx="3" fill="#0a0a0a"/>
+
+          <!-- Height range bracket -->
+          <line x1="38" y1="20" x2="38" y2="360" stroke="#3d6b4f" stroke-width=".8" opacity=".3"/>
+          <line x1="34" y1="20" x2="42" y2="20" stroke="#3d6b4f" stroke-width=".8" opacity=".3"/>
+          <line x1="34" y1="360" x2="42" y2="360" stroke="#3d6b4f" stroke-width=".8" opacity=".3"/>
+          <text x="4" y="196" font-size="8.5" fill="#3d6b4f" font-family="Epilogue,sans-serif" opacity=".6" transform="rotate(-90,4,196)">24.9″ – 50.4″</text>
+        </svg>
+      </div>
+
+      <div class="anatomy-callouts reveal reveal-delay-1">
+        <p class="eyebrow">Engineering explainer</p>
+        <h2 class="stitle" style="margin-bottom:2rem">Why <em>three stages</em> change everything.</h2>
+
+        <div class="callout">
+          <div class="callout-num">01</div>
+          <div class="callout-body">
+            <strong>Three-stage telescoping columns</strong>
+            <span>Standard standing desks use two-stage legs — more gap between sections, more lateral play at height. Vernal's three-stage system distributes the extension across three sections, each with engineered glide tolerances under 0.001″. The result: near-zero sway at any height.</span>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout-num">02</div>
+          <div class="callout-body">
+            <strong>T-frame, not C-frame</strong>
+            <span>C-frames anchor legs at the back of the desktop, leaving the front half unsupported. Vernal's T-frame crossbar runs center-span, distributing load front-to-back and side-to-side simultaneously — stable in all four planes at all heights.</span>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout-num">03</div>
+          <div class="callout-body">
+            <strong>Independent motor per column</strong>
+            <span>Dual motors — one per leg — synchronize to &lt;0.8mm height variance across the span. If one leg meets resistance, both stop and reverse. No torque imbalance. No tilting under uneven loads.</span>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout-num">04</div>
+          <div class="callout-body">
+            <strong>Third-party test report — publicly available</strong>
+            <span>Every specification is verified by accredited independent labs, not self-reported. Load capacity, noise level, lift cycles, column gap tolerance. We publish the full report. Most brands do not offer this.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proof numbers -->
+    <div class="proof-grid reveal">
+      <div class="proof-cell">
+        <div class="proof-num">397<span style="font-size:1.4rem">lbs</span></div>
+        <div class="proof-label">Verified load capacity</div>
+        <div class="proof-desc">Speed constant at 1.6″/s regardless of load changes</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">&lt;0.001<span style="font-size:1.4rem">″</span></div>
+        <div class="proof-label">Column gap tolerance</div>
+        <div class="proof-desc">Precision glide engineering, verified by independent lab</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">30K<span style="font-size:1.4rem">+</span></div>
+        <div class="proof-label">Lift cycles tested</div>
+        <div class="proof-desc">15 sit/stand transitions daily for 5+ years equivalent</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">&lt;48<span style="font-size:1.4rem">dB</span></div>
+        <div class="proof-label">Motor noise level</div>
+        <div class="proof-desc">Quieter than a library. Adjust during calls, undetected</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDITORIAL PULLQUOTE — dark panel -->
+<section data-section="editorial" data-section-type="pdp-editorial">
+  <div class="wrap">
+    <div class="editorial reveal">
+      <div class="ed-panel-dark">
+        <p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:1.25rem">TechRadar review</p>
+        <p class="ed-quote">"At its maximum height — which I use as a 6'7″ person — I came away impressed with how sturdy the Core3 is. The higher these standing desks go, the more wobble becomes a factor. Happily, the Vernal never wobbled too much to cause motion sickness."</p>
+        <p class="ed-attr">Independent review, TechRadar · Verified purchase</p>
+      </div>
+      <div class="ed-panel" style="background:var(--cream2);display:flex;flex-direction:column;justify-content:center;padding:4rem">
+        <!-- Visual: simple clean desk spec card -->
+        <p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:1.5rem">Quick specs</p>
+        <div style="display:flex;flex-direction:column;gap:.85rem">
+          <div style="display:flex;justify-content:space-between;padding-bottom:.85rem;border-bottom:1px solid var(--cream3)">
+            <span style="font-size:13px;color:var(--ink3)">Height range</span>
+            <span style="font-size:13.5px;font-weight:500;color:var(--ink)">24.9″ – 50.4″</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding-bottom:.85rem;border-bottom:1px solid var(--cream3)">
+            <span style="font-size:13px;color:var(--ink3)">Lifting speed</span>
+            <span style="font-size:13.5px;font-weight:500;color:var(--ink)">1.57″/s constant</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding-bottom:.85rem;border-bottom:1px solid var(--cream3)">
+            <span style="font-size:13px;color:var(--ink3)">Motor noise</span>
+            <span style="font-size:13.5px;font-weight:500;color:var(--ink)">&lt;48dB</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding-bottom:.85rem;border-bottom:1px solid var(--cream3)">
+            <span style="font-size:13px;color:var(--ink3)">Desktop depth</span>
+            <span style="font-size:13.5px;font-weight:500;color:var(--ink)">27.6″</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding-bottom:.85rem;border-bottom:1px solid var(--cream3)">
+            <span style="font-size:13px;color:var(--ink3)">Desktop thickness</span>
+            <span style="font-size:13.5px;font-weight:500;color:var(--ink)">1″ (reinforced)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between">
+            <span style="font-size:13px;color:var(--ink3)">Memory presets</span>
+            <span style="font-size:13.5px;font-weight:500;color:var(--ink)">4 heights</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section data-section="social-proof" data-section-type="pdp-testimonials" class="sec-cream2">
+  <div class="wrap">
+    <div class="reviews-intro reveal">
+      <div>
+        <p class="eyebrow">Verified buyers</p>
+        <h2 class="stitle" style="margin-bottom:0">What they say after <em>months</em> of daily use.</h2>
+      </div>
+      <div class="big-score">
+        4.8
+        <div class="score-sub">out of 5 · 2,400+ reviews</div>
+      </div>
+    </div>
+
+    <div class="tgrid">
+      <div class="tcard reveal">
+        <div class="t-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="t-q">"I was on my third desk in two years after wobble ruined the first two. At full standing height with two monitors and a full tower, the Vernal doesn't move. I type hard and tested it deliberately — nothing."</p>
+        <div class="t-result-tag">Chronic back pain → gone after 8 weeks</div>
+        <div class="t-who">
+          <div class="t-av">MR</div>
+          <div>
+            <div class="t-nm">Marcus R.</div>
+            <div class="t-mt">Software engineer, WFH · 60″ Walnut · Verified buyer</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard reveal reveal-delay-1">
+        <div class="t-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="t-q">"Assembly took 35 minutes, alone. That includes time spent reading the instructions properly. Every part was labelled. I've put together a lot of flat-pack furniture — this was genuinely easy."</p>
+        <div class="t-result-tag">Afternoon energy crashes → eliminated</div>
+        <div class="t-who">
+          <div class="t-av">JL</div>
+          <div>
+            <div class="t-nm">Jamie L.</div>
+            <div class="t-mt">Designer, home studio · 48″ White · Verified buyer</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard reveal reveal-delay-2">
+        <div class="t-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="t-q">"The screen doesn't vibrate when I type. That sounds like a basic requirement, but my previous $350 desk failed it completely. This doesn't. Motor is silent enough that I forget it's electric."</p>
+        <div class="t-result-tag">Focus quality noticeably improved</div>
+        <div class="t-who">
+          <div class="t-av">DK</div>
+          <div>
+            <div class="t-nm">Daniel K.</div>
+            <div class="t-mt">Financial analyst · 48″ Walnut · Verified buyer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vproof-bar reveal">
+      <div class="vproof-score-wrap">
+        <div class="vproof-score">4.8</div>
+        <div class="vproof-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <div class="vproof-n">2,400+ reviews</div>
+      </div>
+      <div class="vproof-bars">
+        <div class="vproof-row">5★<div class="vproof-track"><div class="vproof-fill" style="width:84%"></div></div>84%</div>
+        <div class="vproof-row">4★<div class="vproof-track"><div class="vproof-fill" style="width:11%"></div></div>11%</div>
+        <div class="vproof-row">3★<div class="vproof-track"><div class="vproof-fill" style="width:3%"></div></div>3%</div>
+        <div class="vproof-row">2★<div class="vproof-track"><div class="vproof-fill" style="width:1%"></div></div>1%</div>
+        <div class="vproof-row">1★<div class="vproof-track"><div class="vproof-fill" style="width:1%"></div></div>1%</div>
+      </div>
+      <div class="vproof-tags-wrap">
+        <div class="vtag">Stability ✓</div>
+        <div class="vtag">Silent motor ✓</div>
+        <div class="vtag">Easy assembly ✓</div>
+        <div class="vtag">Build quality ✓</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTION HANDLER — new section -->
+<section data-section="objections" data-section-type="pdp-objections" class="sec">
+  <div class="wrap">
+    <p class="eyebrow reveal">Before you decide</p>
+    <h2 class="stitle reveal">The questions buyers always ask — <em>answered directly.</em></h2>
+    <p class="ssub reveal">We'd rather answer the hard ones now than have you find out after delivery.</p>
+    <div class="obj-grid">
+      <div class="obj-card reveal">
+        <div class="obj-q">"Will it actually be stable? Every desk I've had wobbles."</div>
+        <div class="obj-a">Yes — this is the question we get most. Three-stage columns with &lt;0.001″ tolerance, T-frame centering, and a 397 lb tested load capacity means wobble at standing height is minimal and within the range of the best premium desks. We publish the third-party test report so you can verify the numbers rather than trust our marketing.</div>
+        <span class="obj-tag">Stability — confirmed by independent lab</span>
+      </div>
+      <div class="obj-card reveal reveal-delay-1">
+        <div class="obj-q">"What if the tabletop arrives damaged?"</div>
+        <div class="obj-a">It happens. Desktops are large and take impact in shipping. Photograph the damage and contact us. We ship a replacement — no return required. Dozens of reviews specifically mention this experience being handled well, even when something went wrong. Our warranty support is a genuine differentiator.</div>
+        <span class="obj-tag">Replacement shipped, no return required</span>
+      </div>
+      <div class="obj-card reveal">
+        <div class="obj-q">"Is assembly really manageable alone?"</div>
+        <div class="obj-a">Most customers report 30–45 minutes, alone. The frame ships pre-assembled. Desktop attachment is two steps. All bolts are pre-labelled by size and a hex key is included. If you've assembled IKEA furniture, this is easier. If you're concerned, our assembly video runs 12 minutes and shows the full process.</div>
+        <span class="obj-tag">Average 35-min assembly · No additional tools</span>
+      </div>
+      <div class="obj-card reveal reveal-delay-1">
+        <div class="obj-q">"Why 15 years? Most warranties are 1–5."</div>
+        <div class="obj-a">Because we tested the frame to 30,000 lift cycles — equivalent to 15 years of daily use at 15 transitions per day. The warranty matches the engineering. Frame components, motors, columns, and control systems are all covered. Desktops are 5 years. We also ship replacement parts without requiring you to return the desk.</div>
+        <span class="obj-tag">Frame + motor + control system covered</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUSTAINABILITY — new dark section -->
+<section data-section="sustainability" data-section-type="pdp-sustainability" class="sec-dark">
+  <div class="wrap">
+    <div class="sustain-layout">
+      <div class="reveal">
+        <p class="eyebrow" style="color:#a8d0b5">Materials &amp; responsibility</p>
+        <h2 class="stitle stitle-light">Built to last. <em>Not to be replaced.</em></h2>
+        <p class="ssub ssub-light">The most sustainable desk is one you never have to buy again. That's why we start with a 15-year warranty and back it with parts availability — not planned obsolescence.</p>
+        <div class="sustain-pills">
+          <span class="spill">FSC-certified laminate</span>
+          <span class="spill">Recycled waste wood cores</span>
+          <span class="spill">Non-toxic ABS edge banding</span>
+          <span class="spill">Bamboo option available</span>
+          <span class="spill">Replacement parts stocked &gt;10 years</span>
+          <span class="spill">15-year frame warranty</span>
+        </div>
+      </div>
+      <div class="sustain-visual reveal reveal-delay-1">
+        <!-- Circular sustainability SVG diagram -->
+        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:320px;margin:0 auto">
+          <!-- Outer ring -->
+          <circle cx="160" cy="160" r="130" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <circle cx="160" cy="160" r="100" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <!-- Arc segments -->
+          <path d="M160 30 A130 130 0 0 1 272 227" fill="none" stroke="rgba(61,122,84,0.5)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M272 227 A130 130 0 0 1 48 227" fill="none" stroke="rgba(200,163,64,0.3)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M48 227 A130 130 0 0 1 160 30" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="3" stroke-linecap="round"/>
+          <!-- Center -->
+          <circle cx="160" cy="160" r="50" fill="rgba(255,255,255,0.04)"/>
+          <text x="160" y="154" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-style="italic" fill="rgba(255,255,255,.5)">Built</text>
+          <text x="160" y="172" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-style="italic" fill="rgba(255,255,255,.5)">to last</text>
+          <!-- Labels -->
+          <text x="204" y="60" font-size="10" fill="rgba(61,122,84,.8)" font-family="Epilogue,sans-serif">FSC certified</text>
+          <text x="244" y="250" font-size="10" fill="rgba(200,163,64,.7)" font-family="Epilogue,sans-serif">15-yr warranty</text>
+          <text x="30" y="250" font-size="10" fill="rgba(255,255,255,.35)" font-family="Epilogue,sans-serif">Parts available</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section data-section="comparison" data-section-type="pdp-comparison" class="sec-cream2">
+  <div class="wrap">
+    <p class="eyebrow reveal">Head to head</p>
+    <h2 class="stitle reveal">What you trade away with <em>cheaper desks.</em></h2>
+    <table class="ctable reveal" style="margin-top:2.5rem">
+      <thead>
+        <tr>
+          <th class="h-blank"></th>
+          <th class="h-us">Vernal</th>
+          <th class="h-them">Budget (&lt;$300)</th>
+          <th class="h-them">Mid-range ($350–500)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="c-label">Three-stage leg columns</td><td class="c-us"><span class="chk">✓</span></td><td class="c-them"><span class="crs">✗</span></td><td class="c-them"><span class="crs">✗</span></td></tr>
+        <tr><td class="c-label">Dual-motor T-frame</td><td class="c-us"><span class="chk">✓</span></td><td class="c-them"><span class="crs">✗</span></td><td class="c-them">Some</td></tr>
+        <tr><td class="c-label">3rd-party stability report (public)</td><td class="c-us"><span class="chk">✓ Public</span></td><td class="c-them"><span class="crs">✗</span></td><td class="c-them"><span class="crs">✗</span></td></tr>
+        <tr><td class="c-label">Column gap tolerance</td><td class="c-us"><span class="chk">&lt;0.001″</span></td><td class="c-them">Unspecified</td><td class="c-them">Unspecified</td></tr>
+        <tr><td class="c-label">Frame warranty</td><td class="c-us"><span class="chk">15 years</span></td><td class="c-them">1–2 years</td><td class="c-them">5 years</td></tr>
+        <tr><td class="c-label">Obstacle detection</td><td class="c-us"><span class="chk">✓</span></td><td class="c-them"><span class="crs">✗</span></td><td class="c-them">Some</td></tr>
+        <tr><td class="c-label">Integrated cable management</td><td class="c-us"><span class="chk">Included</span></td><td class="c-them"><span class="crs">✗</span></td><td class="c-them">Add-on</td></tr>
+        <tr><td class="c-label">Return policy</td><td class="c-us"><span class="chk">30-day free</span></td><td class="c-them">15 days</td><td class="c-them">30 days</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- SETUP PROCESS -->
+<section data-section="process" data-section-type="pdp-process" class="sec">
+  <div class="wrap">
+    <p class="eyebrow reveal">Setup</p>
+    <h2 class="stitle reveal">From box to <em>ready in 35 minutes.</em> Alone.</h2>
+    <p class="ssub reveal">Pre-assembled nuts, labelled parts, two-step desktop integration. One hex key included — nothing else needed.</p>
+    <div class="steps-track">
+      <div class="step reveal">
+        <div class="step-icon"><span class="step-n">01</span></div>
+        <div class="step-title">Unbox and lay out</div>
+        <div class="step-desc">Everything arrives in padded, labelled packages. Spread parts on the floor. Each component has a part number that matches the instruction diagram — no ambiguous "part A" guesswork.</div>
+      </div>
+      <div class="step reveal reveal-delay-1">
+        <div class="step-icon"><span class="step-n">02</span></div>
+        <div class="step-title">Build the frame</div>
+        <div class="step-desc">Attach legs to the pre-assembled crossbar. All bolts are pre-threaded. The hex key in the box handles every fastener. Takes 10–12 minutes. The frame self-squares during assembly.</div>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-icon"><span class="step-n">03</span></div>
+        <div class="step-title">Mount desktop &amp; program heights</div>
+        <div class="step-desc">Frame-to-desktop in two steps via pre-drilled mounting points. Then plug in, run the calibration cycle, save your sitting and standing heights as memory presets. Done.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IRRESPONSIBILITY THRESHOLD — OFFER -->
+<section data-section="offer" data-section-type="pdp-offer" class="sec" style="background:var(--cream2)">
+  <div class="wrap">
+    <p class="eyebrow reveal">Limited offer</p>
+    <h2 class="stitle reveal">The desk — <em>plus everything you need</em> to run it properly.</h2>
+    <p class="ssub reveal">Through the end of this week, every order includes the full cable management bundle — a $79 value most buyers add separately anyway.</p>
+    <div class="offer-block reveal">
+      <div class="offer-inner">
+        <div class="offer-copy">
+          <span class="offer-badge">This week only</span>
+          <h3 class="offer-title">Desk + full cable management kit — included free.</h3>
+          <p class="offer-desc">The crossbar cable tray and under-desk cable management system are already built into the desk. But the full cable bundle — including the Velcro routing kit, grommet caps, and extra cable clips — ships with every order placed this week at no cost. If you were planning to buy cable management separately, you just saved $79.</p>
+        </div>
+        <div class="offer-cta-side">
+          <div class="offer-price-wrap">
+            <div class="offer-was">Value: $538</div>
+            <div class="offer-price">$459</div>
+            <div class="offer-note">includes free cable bundle</div>
+          </div>
+          <button class="btn-offer" onclick="void(0)">Add to cart — $459</button>
+          <div class="offer-guar">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l2.5 2.5L10 3" stroke="rgba(255,255,255,.35)" stroke-width="1.2" stroke-linecap="round"/></svg>
+            30-day free returns
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNICAL SPECS -->
+<section data-section="specs" data-section-type="pdp-specs" class="sec">
+  <div class="wrap">
+    <p class="eyebrow reveal">Full specifications</p>
+    <h2 class="stitle reveal">Every <em>number verified.</em></h2>
+    <div class="specs-grid reveal">
+      <div class="spec-item"><span class="spec-key">Height range</span><span class="spec-val">24.9″ – 50.4″</span></div>
+      <div class="spec-item"><span class="spec-key">Desktop sizes</span><span class="spec-val">40″, 48″, 60″ × 27.6″</span></div>
+      <div class="spec-item"><span class="spec-key">Lifting speed</span><span class="spec-val">1.57″/s (constant under load)</span></div>
+      <div class="spec-item"><span class="spec-key">Motor noise</span><span class="spec-val">&lt;48dB</span></div>
+      <div class="spec-item"><span class="spec-key">Max load capacity</span><span class="spec-val">397 lbs (verified)</span></div>
+      <div class="spec-item"><span class="spec-key">Column gap tolerance</span><span class="spec-val">&lt;0.001″</span></div>
+      <div class="spec-item"><span class="spec-key">Leg stages</span><span class="spec-val">Three-stage telescoping</span></div>
+      <div class="spec-item"><span class="spec-key">Frame type</span><span class="spec-val">Dual-motor T-frame</span></div>
+      <div class="spec-item"><span class="spec-key">Desktop thickness</span><span class="spec-val">1″ (25mm reinforced)</span></div>
+      <div class="spec-item"><span class="spec-key">Memory presets</span><span class="spec-val">4 heights</span></div>
+      <div class="spec-item"><span class="spec-key">Obstacle detection</span><span class="spec-val">Yes — stops + reverses</span></div>
+      <div class="spec-item"><span class="spec-key">Cable management</span><span class="spec-val">Crossbar tray + under-desk tray</span></div>
+      <div class="spec-item"><span class="spec-key">Desktop edge finish</span><span class="spec-val">Rounded ABS laser-edge</span></div>
+      <div class="spec-item"><span class="spec-key">Fits users</span><span class="spec-val">3'11″ – 6'8″</span></div>
+      <div class="spec-item"><span class="spec-key">Lift cycles tested</span><span class="spec-val">30,000+ (independent lab)</span></div>
+      <div class="spec-item"><span class="spec-key">Frame warranty</span><span class="spec-val">15 years</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section data-section="faq" data-section-type="pdp-faq" class="faq-section">
+  <div class="wrap">
+    <div class="faq-layout">
+
+      <div class="faq-intro reveal">
+        <p class="eyebrow">Common questions</p>
+        <h2 class="stitle">Every question you'd want answered <em>before buying.</em></h2>
+        <p>We'd rather you know everything upfront than discover something after delivery. These are the real questions people ask — answered without marketing language.</p>
+        <button class="faq-cta-inline" onclick="document.querySelector('.btn-add').click()">
+          Add to cart — $459
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="faq-list reveal reveal-delay-1">
+
+        <div class="faq-item open">
+          <button class="faq-trigger" onclick="toggleFaq(this)">
+            Will it actually stay stable at full standing height?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#3a3a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <p>Yes — this is the question we get most, and for good reason. Most standing desks use two-stage C-frame legs, which are mechanically incapable of staying still at full extension. They have too much gap between leg sections and no lateral support from the front of the desk.</p>
+            <p>Vernal uses three-stage telescoping columns with a verified &lt;0.001″ gap tolerance, and a T-frame crossbar that centers support under the desktop rather than anchoring it only at the back. The result is minimal wobble at standing height — verified by an independent third-party lab whose report we publish. You can read the numbers rather than trusting our marketing.</p>
+            <span class="faq-tag">Verified by independent lab · Report publicly available</span>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)">
+            What does the 15-year warranty actually cover?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#3a3a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <p>The frame and all mechanical components — motors, telescoping columns, crossbar, and digital control system — are covered for 15 years. Desktop surfaces are covered for 5 years. Accessories are covered for 1 year.</p>
+            <p>Warranty claims don't require you to return the whole desk. We ship replacement parts directly. If a motor fails in year 8, we send a new motor. The 15-year figure matches what we tested: 30,000 lift cycles, equivalent to 15 years at 15 transitions per day.</p>
+            <span class="faq-tag">Frame + motors + control system · No full return required</span>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)">
+            Can I assemble it by myself, or do I need help?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#3a3a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <p>Most customers assemble it alone in 30–45 minutes. The frame ships largely pre-assembled. Desktop mounting is a two-step process using pre-drilled mounting points that align automatically. All hardware is labelled by size and a hex key is included — no additional tools needed.</p>
+            <p>If you want to check before committing, our assembly video runs 12 minutes and covers the complete process. Many customers describe it as the easiest desk they've assembled. The most common report: they finished faster than expected.</p>
+            <span class="faq-tag">Average 35 min · One person · No additional tools</span>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)">
+            What if the desktop arrives damaged in shipping?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#3a3a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <p>It does happen — desktops are large flat surfaces and shipping takes its toll. If yours arrives damaged, photograph it and contact us. We ship a replacement desktop directly to you without requiring you to return the damaged piece or disassemble what you've built.</p>
+            <p>This specific scenario comes up in dozens of customer reviews, and the consistent experience reported is that the replacement ships quickly and the process is handled well. Our support team is US-based, reachable by email and phone.</p>
+            <span class="faq-tag">Replacement shipped · No return required · US support</span>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)">
+            Will it work for my height? I'm quite tall / short.
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#3a3a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <p>The height range is 24.9″ to 50.4″, which covers users from 3'11" to 6'8". For reference, ergonomic guidelines suggest sitting height = your height × 0.4, and standing height = your height × 0.62. Both land comfortably inside this range for nearly everyone.</p>
+            <p>The four memory presets mean you save your exact sitting and standing positions once — then switch between them in a single press. If you share the desk with someone of a very different height, each person can store their own presets.</p>
+            <span class="faq-tag">3'11&Prime; – 6'8&Prime; · 4 memory presets</span>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)">
+            How loud is the motor when it adjusts?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#3a3a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <p>Under 48dB — a typical library runs at around 50dB, so the desk is slightly quieter than silence in a quiet room. You can adjust during video calls without it registering in the background. Tested across the full load range from empty desk to max capacity.</p>
+            <p>The obstacle detection system also runs silently. If the desk encounters something underneath while lowering — a chair armrest, a cable, even a water bottle — it stops and reverses automatically without any noise or jolt.</p>
+            <span class="faq-tag">&lt;48dB verified · Silent obstacle detection</span>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)">
+            What desk sizes are available and how do I choose?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#3a3a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <p>Three widths: 40″, 48″, and 60″ — all at a 27.6″ depth. The 48″ is the most popular and handles a dual-monitor setup with room for a keyboard and peripherals. The 60″ is for triple monitors or setups where you want significant spread. The 40″ suits single-monitor setups or compact spaces.</p>
+            <p>All three are available in White, Walnut, Light Walnut, and Natural Bamboo. The frame dimensions are identical across sizes — only the desktop changes. Load capacity, motor, and frame warranty are the same regardless of size chosen.</p>
+            <span class="faq-tag">40&Prime; · 48&Prime; · 60&Prime; &middot; All depths 27.6&Prime;</span>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" onclick="toggleFaq(this)">
+            Can I return it if I don't like it?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="#3a3a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <p>Yes — 30 days from delivery, no questions asked. If you set it up and it isn't right for your space, or it doesn't meet your expectations, contact us and we'll arrange collection. Shipping on returns is free.</p>
+            <p>We'd rather process a return than have you keep something you're not happy with. That said, the 30-day window is long enough to properly evaluate the desk in your actual workflow — including testing stability at standing height under your full monitor setup.</p>
+            <span class="faq-tag">30-day free returns · Free collection</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section data-section="final-cta" data-section-type="pdp-final-cta" class="sec-cream2">
+  <div class="wrap">
+    <div class="final-layout">
+      <div class="reveal">
+        <h2 class="final-title">A workspace that works as <em>hard as you do.</em></h2>
+        <p class="final-sub">Free shipping. 30-day returns. 15-year warranty on the frame. If it wobbles when you set it up — return it. That's the guarantee, in plain language.</p>
+        <div class="vstack">
+          <div class="vstack-header">What's included</div>
+          <div class="vstack-row"><span class="vstack-name">Vernal height-adjustable desk (frame + desktop)</span><span class="vstack-price">$459</span></div>
+          <div class="vstack-row"><span class="vstack-name">Crossbar cable tray (built-in)</span><span class="vstack-price green">Included</span></div>
+          <div class="vstack-row"><span class="vstack-name">Under-desk cable management tray</span><span class="vstack-price green">Included</span></div>
+          <div class="vstack-row"><span class="vstack-name">Full cable routing bundle ($79 value)</span><span class="vstack-price green">Free this week</span></div>
+          <div class="vstack-row"><span class="vstack-name">4-preset digital handset + hex tool</span><span class="vstack-price green">Included</span></div>
+          <div class="vstack-row"><span class="vstack-name">Free shipping + 15-year frame warranty</span><span class="vstack-price green">Included</span></div>
+          <div class="vstack-total"><span class="vstack-total-label">Your price today</span><span class="vstack-total-price">$459</span></div>
+        </div>
+        <button class="btn-add" style="margin-top:1.5rem;max-width:420px" data-setting="final_cta">Add to cart — Free shipping</button>
+        <div class="final-guar">
+          <span class="fg-item"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3 3L11 3" stroke="#3d7a54" stroke-width="1.3" stroke-linecap="round"/></svg>30-day free returns</span>
+          <span class="fg-item"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3 3L11 3" stroke="#3d7a54" stroke-width="1.3" stroke-linecap="round"/></svg>No-wobble guarantee</span>
+          <span class="fg-item"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3 3L11 3" stroke="#3d7a54" stroke-width="1.3" stroke-linecap="round"/></svg>Ships in 5–8 days</span>
+        </div>
+      </div>
+
+      <!-- Final visual — height range diagram -->
+      <div class="reveal reveal-delay-1" style="display:flex;align-items:center;justify-content:center">
+        <svg viewBox="0 0 260 440" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:260px">
+          <defs>
+            <linearGradient id="finalLeg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#e8e4da"/>
+              <stop offset="100%" stop-color="#d4cec5"/>
+            </linearGradient>
+          </defs>
+          <!-- Person silhouette at standing desk height -->
+          <!-- Desk at standing height -->
+          <rect x="30" y="120" width="200" height="16" rx="4" fill="#ddd8ce"/>
+          <rect x="80" y="134" width="18" height="160" rx="3" fill="#3a3a3a"/>
+          <rect x="162" y="134" width="18" height="160" rx="3" fill="#3a3a3a"/>
+          <rect x="60" y="290" width="140" height="8" rx="2" fill="#2a2a2a"/>
+          <!-- Desk at sitting height (ghost) -->
+          <rect x="30" y="280" width="200" height="12" rx="4" fill="#e8e4da" opacity=".4"/>
+          <rect x="80" y="290" width="14" height="100" rx="3" fill="#3a3a3a" opacity=".25"/>
+          <rect x="166" y="290" width="14" height="100" rx="3" fill="#3a3a3a" opacity=".25"/>
+          <!-- Double-headed arrow -->
+          <line x1="20" y1="126" x2="20" y2="286" stroke="#3d7a54" stroke-width="1.2" stroke-dasharray="4,3"/>
+          <polygon points="20,120 17,130 23,130" fill="#3d7a54"/>
+          <polygon points="20,292 17,282 23,282" fill="#3d7a54"/>
+          <!-- Labels -->
+          <text x="36" y="200" font-size="9" fill="#3d7a54" font-family="Epilogue,sans-serif" transform="rotate(-90,36,200)">25.6″ range</text>
+          <text x="40" y="124" font-size="9" fill="#9c9890" font-family="Epilogue,sans-serif">Standing</text>
+          <text x="40" y="284" font-size="9" fill="#9c9890" font-family="Epilogue,sans-serif">Sitting</text>
+          <!-- Monitor on standing desk -->
+          <rect x="96" y="58" width="68" height="46" rx="4" fill="#1e2830"/>
+          <rect x="99" y="61" width="62" height="40" rx="3" fill="#1e2d3d"/>
+          <rect x="126" y="103" width="8" height="18" rx="1" fill="#1a1a1a"/>
+          <!-- Person silhouette -->
+          <circle cx="200" cy="68" r="14" fill="#d4cec5"/>
+          <path d="M188 96 Q200 102 212 96 L214 130 Q200 132 186 130 Z" fill="#d4cec5"/>
+          <line x1="186" y1="102" x2="178" y2="124" stroke="#d4cec5" stroke-width="8" stroke-linecap="round"/>
+          <line x1="214" y1="102" x2="222" y2="124" stroke="#d4cec5" stroke-width="8" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="flogo">Vernal<span>.</span></div>
+    <p class="ftxt">© 2025 Vernal · 15-Year Frame Warranty · 30-Day Returns · Free Shipping</p>
+  </div>
+</footer>
+
+<script>
+// Variant selectors
+function selSize(b){document.querySelectorAll('.vbtn').forEach(function(x){x.classList.remove('on')});b.classList.add('on');updateStickySize(b.textContent.trim())}
+function selColor(b){document.querySelectorAll('.cbtn').forEach(function(x){x.classList.remove('on')});b.classList.add('on')}
+function updateStickySize(s){var el=document.querySelector('.sticky-sub');if(el){var parts=el.textContent.split('·');if(parts.length>1){el.textContent=s+' · '+parts.slice(1).join('·').trim()}}}
+
+// Scroll-triggered reveals
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}
+    });
+  },{threshold:.12});
+  els.forEach(function(el){io.observe(el)});
+})();
+
+// Sticky bar — show after hero CTA scrolls out of view
+(function(){
+  var bar=document.getElementById('stickyBar');
+  var hero=document.querySelector('.btn-add');
+  if(!bar||!hero)return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      bar.classList.toggle('visible',!e.isIntersecting);
+    });
+  },{threshold:0});
+  io.observe(hero);
+})();
+
+// FAQ accordion
+function toggleFaq(btn){
+  var item=btn.closest('.faq-item');
+  var isOpen=item.classList.contains('open');
+  // close all
+  document.querySelectorAll('.faq-item.open').forEach(function(el){
+    if(el!==item){el.classList.remove('open')}
+  });
+  // toggle clicked
+  if(isOpen){item.classList.remove('open')}else{item.classList.add('open')}
+}
+</script>
+</body>
+</html>
